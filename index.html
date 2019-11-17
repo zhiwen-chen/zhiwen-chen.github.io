@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="紫印罗兰的博客" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="分享即是快乐Sharing is Happiness">
+<meta name="keywords" content="blog,博客,blog博客,blog博客新闻,blog博客资讯,blog博客信息,紫印罗兰的blog博客,python,自学者,Python自学,blog of zhiwen-chen,python学习">
+<meta property="og:type" content="website">
+<meta property="og:title" content="紫印罗兰的博客">
+<meta property="og:url" content="https://blog.vseal.cn/index.html">
+<meta property="og:site_name" content="紫印罗兰的博客">
+<meta property="og:description" content="分享即是快乐Sharing is Happiness">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="紫印罗兰的博客">
+<meta name="twitter:description" content="分享即是快乐Sharing is Happiness">
+
+<link rel="canonical" href="https://blog.vseal.cn/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>紫印罗兰的博客</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?15e86471caddc13fd2ad9355ffad739e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">紫印罗兰的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">The blog of Vseal</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-python基础教程">
+
+    <a href="/categories/Python基础教程/" rel="section"><i class="fa fa-fw fa-pencil"></i>Python基础教程</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/98dbd912.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/98dbd912.html" class="post-title-link" itemprop="url">Python-math模块</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-17 18:20:31 / 修改时间：18:31:48" itemprop="dateCreated datePublished" datetime="2019-11-17T18:20:31+08:00">2019-11-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="本篇正文"><a href="#本篇正文" class="headerlink" title="本篇正文"></a>本篇正文</h2><ul>
+<li><p>引入math模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import math</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>常用数学函数</p>
+</li>
+</ul><ol>
+<li><p>ceil:取大于等于x的最小的整数值，如果x是一个整数，则返回x</p>
+</li>
+<li><p>copysign:把y的正负号加到x前面，可以使用0</p>
+</li>
+<li><p>cos:求x的余弦，x必须是弧度</p>
+</li>
+<li><p>degrees:把x从弧度转换成角度</p>
+</li>
+<li><p>e:表示一个常量</p>
+</li>
+<li><p>exp:返回math.e,也就是2.71828的x次方</p>
+</li>
+<li><p>expm1:返回math.e的x(其值为2.71828)次方的值减１</p>
+</li>
+<li><p>fabs:返回x的绝对值</p>
+</li>
+<li><p>factorial:取x的阶乘的值</p>
+</li>
+<li><p>floor:取小于等于x的最大的整数值，如果x是一个整数，则返回自身</p>
+</li>
+<li><p>fmod:得到x/y的余数，其值是一个浮点数</p>
+</li>
+<li><p>frexp:返回一个元组(m,e),其计算方式为：x分别除0.5和1,得到一个值的范围</p>
+</li>
+<li><p>fsum:对迭代器里的每个元素进行求和操作</p>
+</li>
+<li><p>gcd:返回x和y的最大公约数</p>
+</li>
+<li><p>hypot:如果x是不是无穷大的数字,则返回True,否则返回False</p>
+</li>
+<li><p>isfinite:如果x是正无穷大或负无穷大，则返回True,否则返回False</p>
+</li>
+<li><p>isinf:如果x是正无穷大或负无穷大，则返回True,否则返回False</p>
+</li>
+<li><p>isnan:如果x不是数字True,否则返回False</p>
+</li>
+<li><p>ldexp:返回x*(2**i)的值</p>
+</li>
+<li><p>log:返回x的自然对数，默认以e为基数，base参数给定时，将x的对数返回给定的base,计算式为：log(x)/log(base)</p>
+</li>
+<li><p>log10:返回x的以10为底的对数</p>
+</li>
+<li><p>log1p:返回x+1的自然对数(基数为e)的值</p>
+</li>
+<li><p>log2:返回x的基2对数</p>
+</li>
+<li><p>modf:返回由x的小数部分和整数部分组成的元组</p>
+</li>
+<li><p>pi:数字常量，圆周率</p>
+</li>
+<li><p>pow:返回x的y次方，即x**y</p>
+</li>
+<li><p>radians:把角度x转换成弧度</p>
+</li>
+<li><p>sin:求x(x为弧度)的正弦值</p>
+</li>
+<li><p>sqrt:求x的平方根</p>
+</li>
+<li><p>tan:返回x(x为弧度)的正切值</p>
+</li>
+<li><p>trunc:返回x的整数部分</p>
+</li>
+</ol>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/98dbd912.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/bebfcfa4.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/bebfcfa4.html" class="post-title-link" itemprop="url">Python复数</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-16 22:53:27 / 修改时间：22:54:27" itemprop="dateCreated datePublished" datetime="2019-11-16T22:53:27+08:00">2019-11-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>内建函数库的complex()<ol>
+<li>普通构造：<code>complex(2,3)</code>；代表2+3j</li>
+<li>字符串构建：<code>complex(&#39;2+3j&#39;)</code>；代表2+3j</li>
+<li>获取实部：<code>complex(2,3).real</code>；获取虚部：<code>complex(2,3).imag</code>;complex(2,3)代表复数对象</li>
+<li>获取模：<code>abs(compldex(2,3))</code><h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"请输入两个复数，形式为a+bj:"</span>)</span><br><span class="line">a=input(<span class="string">'请输入第一个复数：'</span>)</span><br><span class="line">b=input(<span class="string">'请输入第二个复数：'</span>)</span><br><span class="line">c1=complex(a)</span><br><span class="line">c2=complex(b)</span><br><span class="line">s1=c1+c2</span><br><span class="line">s2=c1-c2</span><br><span class="line">s3=c1*c2</span><br><span class="line">s4=c1/c2</span><br><span class="line">print(<span class="string">"&#123;0&#125;+&#123;1&#125;=&#123;2&#125;\n&#123;0&#125;-&#123;1&#125;=&#123;3&#125;\n&#123;0&#125;*&#123;1&#125;=&#123;4&#125;\n&#123;0&#125;/&#123;1&#125;=&#123;5:.3f&#125;\n"</span>\</span><br><span class="line">      .format(c1,c2,s1,s2,s3,s4))</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ul>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/2d05461.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2d05461.html" class="post-title-link" itemprop="url">Python输出</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-14 21:33:47" itemprop="dateCreated datePublished" datetime="2019-11-14T21:33:47+08:00">2019-11-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-15 23:38:41" itemprop="dateModified" datetime="2019-11-15T23:38:41+08:00">2019-11-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>本节内容：print()函数</strong></p><ul>
+<li><p>简单玩法：</p>
+<ol>
+<li>print(var1,var2)#直接输出变量</li>
+<li>print(“str”,var)#字符串后加变量</li>
+<li>print(“words %d %s “ %(num,str))#传说中的占位符</li>
+</ol>
+</li>
+<li><p>普通玩法：</p>
+<ol>
+<li>语法格式：print(*objects,sep=’’,end=’\n’[,file=sys.stdout,flush=False])#括号[]内的参数很少使用</li>
+<li>参数说明：objects转为字符串的对象，然后写入file参数指定的文件，sys.stdout为标准输出;sep每个对象间分隔的参数，默认是空格；end为结尾参数，默认为换行。<br>1.有趣的示例：<ol>
+<li>print(‘Hello’,’world!’,sep=’**‘) 输出 Hello**world</li>
+<li>print()默认输出后换行，不想换行可以print(end=’’)修改结尾参数</li>
+<li>使用转义字符控制输出格式如\t(8个空格的制表符) \n</li>
+<li>使用转义字符输出特殊字符，\，\’，\”等</li>
+<li>字符对齐：左对齐ljust(n)、右对齐rjust(n)和居中center(n),n为最大显示字符个数；如<pre><code>str = &quot;this is string example....wow!!!&quot;;
+print str.ljust(50);
+</code></pre></li>
+<li>zifill()函数0左填充<pre><code>print str.zifill();
+</code></pre></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/2d05461.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/bdee3b16.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/bdee3b16.html" class="post-title-link" itemprop="url">Python输入</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-13 23:38:33" itemprop="dateCreated datePublished" datetime="2019-11-13T23:38:33+08:00">2019-11-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-14 21:37:46" itemprop="dateModified" datetime="2019-11-14T21:37:46+08:00">2019-11-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><p>函数input()<br>  语法格式：变量名 = input(“输入提示信息”)<br>  功能：输入除换行符外的字符(换句话说回车完成一次输入)</p>
+</li>
+<li><p><strong>注意：</strong></p>
+<ol>
+<li>多个数据输入：使用eval()函数；如a,b,c = eval(input())</li>
+<li>结合float()，int()等函数使得输入值为确定类型</li>
+</ol>
+</li>
+</ul>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/80ab09ee.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/80ab09ee.html" class="post-title-link" itemprop="url">Python成员运算符</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-11 22:24:48 / 修改时间：22:32:46" itemprop="dateCreated datePublished" datetime="2019-11-11T22:24:48+08:00">2019-11-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h5 id="in-和-not-in"><a href="#in-和-not-in" class="headerlink" title="in 和 not in"></a>in 和 not in</h5><p>in：在序列里面返回True，否者为False<br>not in ：与上面刚好相反</p>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/8667cafb.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/8667cafb.html" class="post-title-link" itemprop="url">Python位运算符</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-10 21:07:49 / 修改时间：21:09:22" itemprop="dateCreated datePublished" datetime="2019-11-10T21:07:49+08:00">2019-11-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>位运算的规则：<strong>把数字转为二进制后进行运算，运算结果转为原数字类型</strong></p><ul>
+<li>Python的位运算符</li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:left">运算符</th>
+<th style="text-align:left">操作</th>
+<th style="text-align:left">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&amp;</td>
+<td style="text-align:left">按位与；如果对应位同为1则结果为1，否则为0</td>
+<td style="text-align:left">12&amp;5 结果 4</td>
+</tr>
+<tr>
+<td style="text-align:left">I</td>
+<td style="text-align:left">按位或；如果对应位有一个为1则结果为1，否者为0</td>
+<td style="text-align:left">12I5 结果 13</td>
+</tr>
+<tr>
+<td style="text-align:left">^</td>
+<td style="text-align:left">按位异或；如果对应位<strong>不相等</strong>，结果为1，否者为0</td>
+<td style="text-align:left">12^5 结果 9</td>
+</tr>
+<tr>
+<td style="text-align:left">~</td>
+<td style="text-align:left">按位取反；对应位反转，如果原来为1(0)，变成0(1)</td>
+<td style="text-align:left">~12 结果 -13</td>
+</tr>
+<tr>
+<td style="text-align:left">&lt;&lt;</td>
+<td style="text-align:left">左移运算符；运算数的各二进制位左移若干位，高位丢弃，低位补零</td>
+<td style="text-align:left">12&lt;&lt;5 结果为384</td>
+</tr>
+<tr>
+<td style="text-align:left">&gt;&gt;</td>
+<td style="text-align:left">右移运算符；与上相反，低位丢弃，高位补零</td>
+<td style="text-align:left">12&gt;&gt;5 结果为0</td>
+</tr>
+</tbody>
+</table>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/d136ea2c.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/d136ea2c.html" class="post-title-link" itemprop="url">Python赋值运算符</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-09 23:29:18 / 修改时间：23:39:08" itemprop="dateCreated datePublished" datetime="2019-11-09T23:29:18+08:00">2019-11-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="上节内容"><a href="#上节内容" class="headerlink" title="上节内容"></a>上节内容</h2><h6 id="任务2-5-闰年判断"><a href="#任务2-5-闰年判断" class="headerlink" title="任务2-5 闰年判断"></a>任务2-5 闰年判断</h6><p>设计思路：参考之前学的逻辑判断表达式，结合闰年判断规则，年数能整除4且不被100整除，能整除400。</p><p>示例源码：关注微信公众号‘湖工大风沙渡’回复<strong>37py2-5</strong>即可查看。</p><hr><h2 id="本节内容"><a href="#本节内容" class="headerlink" title="本节内容"></a>本节内容</h2><ul>
+<li>Python的赋值运算符</li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:left">运算符</th>
+<th style="text-align:left">实例说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">=</td>
+<td style="text-align:left">c=5+2 -&gt; c= 7</td>
+</tr>
+<tr>
+<td style="text-align:left">+=</td>
+<td style="text-align:left">c+=2 -&gt; c=c+2</td>
+</tr>
+<tr>
+<td style="text-align:left">-=</td>
+<td style="text-align:left">c-=2 -&gt; c=c-2</td>
+</tr>
+<tr>
+<td style="text-align:left">*=</td>
+<td style="text-align:left">c*=2 -&gt; c=c*2</td>
+</tr>
+<tr>
+<td style="text-align:left">/=</td>
+<td style="text-align:left">c/=2 -&gt; c=c/2</td>
+</tr>
+<tr>
+<td style="text-align:left">%=</td>
+<td style="text-align:left">c%2 -&gt; c=c%2</td>
+</tr>
+<tr>
+<td style="text-align:left">**=</td>
+<td style="text-align:left">c**=2 -&gt; c=c**2</td>
+</tr>
+<tr>
+<td style="text-align:left">//=</td>
+<td style="text-align:left">c//=2 -&gt; c=c//2</td>
+</tr>
+</tbody>
+</table>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/9696725b.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/9696725b.html" class="post-title-link" itemprop="url">Python关系运算符和逻辑运算符</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-08 23:35:16 / 修改时间：23:38:20" itemprop="dateCreated datePublished" datetime="2019-11-08T23:35:16+08:00">2019-11-08</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="上节任务"><a href="#上节任务" class="headerlink" title="上节任务"></a>上节任务</h2><h5 id="任务2-4-计算圆锥体的体积和表面积"><a href="#任务2-4-计算圆锥体的体积和表面积" class="headerlink" title="任务2-4 计算圆锥体的体积和表面积"></a>任务2-4 计算圆锥体的体积和表面积</h5><p>设计思路：从键盘接受2个数据，底面半径、高，存入变量，再根据公式计算求解。<br>任务示例源码：关注微信公众号“湖工大风沙渡”回复<strong>37py2-4</strong>即可免费观看。</p><hr><h2 id="本篇正文"><a href="#本篇正文" class="headerlink" title="本篇正文"></a>本篇正文</h2><ul>
+<li>Python的关系运算符</li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:left">运算符</th>
+<th style="text-align:left">操作</th>
+<th style="text-align:left">实例说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">==</td>
+<td style="text-align:left">等于</td>
+<td style="text-align:left">2==2 True</td>
+</tr>
+<tr>
+<td style="text-align:left">!=</td>
+<td style="text-align:left">不等于</td>
+<td style="text-align:left">5!=2 True</td>
+</tr>
+<tr>
+<td style="text-align:left">&lt;</td>
+<td style="text-align:left">小于</td>
+<td style="text-align:left">2&lt;5 True</td>
+</tr>
+<tr>
+<td style="text-align:left">&lt;=</td>
+<td style="text-align:left">小于或等于</td>
+<td style="text-align:left">2&lt;=2 True</td>
+</tr>
+<tr>
+<td style="text-align:left">&gt;</td>
+<td style="text-align:left">大于</td>
+<td style="text-align:left">5&gt;2 True</td>
+</tr>
+<tr>
+<td style="text-align:left">&gt;=</td>
+<td style="text-align:left">大于或等于</td>
+<td style="text-align:left">2&gt;=2 True</td>
+</tr>
+<tr>
+<td style="text-align:left">is</td>
+<td style="text-align:left">判断两个标识符是否<strong>引用</strong>同一对象</td>
+<td style="text-align:left">引用同一对象 True</td>
+</tr>
+<tr>
+<td style="text-align:left">is not</td>
+<td style="text-align:left">判断两个标识符是否<strong>引用</strong>不同对象</td>
+<td style="text-align:left">引用不同对象 True</td>
+</tr>
+</tbody>
+</table>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/9696725b.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/fa3ab1b6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/fa3ab1b6.html" class="post-title-link" itemprop="url">Python算术运算符及其表达式</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-06 23:34:14 / 修改时间：23:36:51" itemprop="dateCreated datePublished" datetime="2019-11-06T23:34:14+08:00">2019-11-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h5 id="上期回顾"><a href="#上期回顾" class="headerlink" title="上期回顾"></a>上期回顾</h5><h6 id="任务2-2-电子邮箱格式检测"><a href="#任务2-2-电子邮箱格式检测" class="headerlink" title="任务2-2 电子邮箱格式检测"></a>任务2-2 电子邮箱格式检测</h6><p>设计思路：用户从键盘输入邮箱，构造邮箱检测正则表达式，调用re.match()函数进行检测并且输出结果。<br>微信公众号”湖工大风沙渡”，回复”37py2-2”获取示例源码</p><h6 id="任务2-3-电话号码检测"><a href="#任务2-3-电话号码检测" class="headerlink" title="任务2-3 电话号码检测"></a>任务2-3 电话号码检测</h6><p>设计思路：用户从键盘输入学生信息，先用正则表达式提取所有的数字，然后构造电话号码检测的正则表达式，调用match()函数进行检测并输出match().group()结果。<br>只考虑国内情况：固定电话区号是3或4位，以0开头；固定电话号码一般是7或8位数字；国内手机号码是11位数字，除了147号码段，其他的都只考虑前两位，例如1[35789]等。<br>微信公众号”湖工大风沙渡”，回复”37py2-3”获取示例源码</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/fa3ab1b6.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/48bfbe8a.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/48bfbe8a.html" class="post-title-link" itemprop="url">Python基本数据类型之变量 </a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-04 22:53:40 / 修改时间：22:55:37" itemprop="dateCreated datePublished" datetime="2019-11-04T22:53:40+08:00">2019-11-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><p>变量特点</p>
+<ol>
+<li>变量不需要声明，但是<strong>必须赋值</strong></li>
+<li>变量命名：（下划线或字母）+（任意数目字母、数字或下划线）</li>
+</ol>
+</li>
+<li><h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><ol>
+<li>变量不能以数字作为开头</li>
+<li>系统关键字不能作为变量名使用，如if,while等</li>
+<li>除了下划线其他字符不能使用</li>
+<li>变量区分大小写</li>
+<li>前后有下划线的变量名<code>_X_</code>为系统变量</li>
+<li>变量是根据赋值所更改类型</li>
+<li>赋值方法<ol>
+<li>普通赋值：y=1</li>
+<li>链式赋值：y=x=a=1</li>
+<li>多元赋值：x,y = 1,2 x,y=y,x</li>
+<li>增量赋值：x+=1</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/48bfbe8a.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="紫印罗兰"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">紫印罗兰</p>
+  <div class="site-description" itemprop="description">分享即是快乐</br>Sharing is Happiness</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zhiwen-chen" title="GitHub → https://github.com/zhiwen-chen" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:admin@vseal.cn" title="E-Mail → mailto:admin@vseal.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.vseal.cn" title="http://www.vseal.cn" rel="noopener" target="_blank">Vseal</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://quan.vseal.cn" title="http://quan.vseal.cn" rel="noopener" target="_blank">紫印有券</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">紫印罗兰 <i class="fa fa-heart" aria-hidden="true"></i> Sharing is Happiness</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+  <script>
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66489812";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script color='0,23,255' opacity='0.5' zIndex='-1' count='99' src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="紫印罗兰的博客" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="上节任务任务2-4 计算圆锥体的体积和表面积设计思路：从键盘接受2个数据，底面半径、高，存入变量，再根据公式计算求解。任务示例源码：关注微信公众号“湖工大风沙渡”回复37py2-4即可免费观看。本篇正文 Python的关系运算符    运算符 操作 实例说明     == 等于 2==2 True   != 不等于 5!=2 True   &amp;lt; 小于 2&amp;lt;5 True   &amp;lt;= 小">
+<meta name="keywords" content="Python关系运算符,Python逻辑运算符,关系运算符和逻辑运算符">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python关系运算符和逻辑运算符">
+<meta property="og:url" content="https://blog.vseal.cn/posts/9696725b.html">
+<meta property="og:site_name" content="紫印罗兰的博客">
+<meta property="og:description" content="上节任务任务2-4 计算圆锥体的体积和表面积设计思路：从键盘接受2个数据，底面半径、高，存入变量，再根据公式计算求解。任务示例源码：关注微信公众号“湖工大风沙渡”回复37py2-4即可免费观看。本篇正文 Python的关系运算符    运算符 操作 实例说明     == 等于 2==2 True   != 不等于 5!=2 True   &amp;lt; 小于 2&amp;lt;5 True   &amp;lt;= 小">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-08T15:38:20.430Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python关系运算符和逻辑运算符">
+<meta name="twitter:description" content="上节任务任务2-4 计算圆锥体的体积和表面积设计思路：从键盘接受2个数据，底面半径、高，存入变量，再根据公式计算求解。任务示例源码：关注微信公众号“湖工大风沙渡”回复37py2-4即可免费观看。本篇正文 Python的关系运算符    运算符 操作 实例说明     == 等于 2==2 True   != 不等于 5!=2 True   &amp;lt; 小于 2&amp;lt;5 True   &amp;lt;= 小">
+
+<link rel="canonical" href="https://blog.vseal.cn/posts/9696725b.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Python关系运算符和逻辑运算符 | 紫印罗兰的博客</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?15e86471caddc13fd2ad9355ffad739e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">紫印罗兰的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">The blog of Vseal</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-python基础教程">
+
+    <a href="/categories/Python基础教程/" rel="section"><i class="fa fa-fw fa-pencil"></i>Python基础教程</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/9696725b.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Python关系运算符和逻辑运算符
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-08 23:35:16 / 修改时间：23:38:20" itemprop="dateCreated datePublished" datetime="2019-11-08T23:35:16+08:00">2019-11-08</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="上节任务"><a href="#上节任务" class="headerlink" title="上节任务"></a>上节任务</h2><h5 id="任务2-4-计算圆锥体的体积和表面积"><a href="#任务2-4-计算圆锥体的体积和表面积" class="headerlink" title="任务2-4 计算圆锥体的体积和表面积"></a>任务2-4 计算圆锥体的体积和表面积</h5><p>设计思路：从键盘接受2个数据，底面半径、高，存入变量，再根据公式计算求解。<br>任务示例源码：关注微信公众号“湖工大风沙渡”回复<strong>37py2-4</strong>即可免费观看。</p><hr><h2 id="本篇正文"><a href="#本篇正文" class="headerlink" title="本篇正文"></a>本篇正文</h2><ul>
+<li>Python的关系运算符</li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:left">运算符</th>
+<th style="text-align:left">操作</th>
+<th style="text-align:left">实例说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">==</td>
+<td style="text-align:left">等于</td>
+<td style="text-align:left">2==2 True</td>
+</tr>
+<tr>
+<td style="text-align:left">!=</td>
+<td style="text-align:left">不等于</td>
+<td style="text-align:left">5!=2 True</td>
+</tr>
+<tr>
+<td style="text-align:left">&lt;</td>
+<td style="text-align:left">小于</td>
+<td style="text-align:left">2&lt;5 True</td>
+</tr>
+<tr>
+<td style="text-align:left">&lt;=</td>
+<td style="text-align:left">小于或等于</td>
+<td style="text-align:left">2&lt;=2 True</td>
+</tr>
+<tr>
+<td style="text-align:left">&gt;</td>
+<td style="text-align:left">大于</td>
+<td style="text-align:left">5&gt;2 True</td>
+</tr>
+<tr>
+<td style="text-align:left">&gt;=</td>
+<td style="text-align:left">大于或等于</td>
+<td style="text-align:left">2&gt;=2 True</td>
+</tr>
+<tr>
+<td style="text-align:left">is</td>
+<td style="text-align:left">判断两个标识符是否<strong>引用</strong>同一对象</td>
+<td style="text-align:left">引用同一对象 True</td>
+</tr>
+<tr>
+<td style="text-align:left">is not</td>
+<td style="text-align:left">判断两个标识符是否<strong>引用</strong>不同对象</td>
+<td style="text-align:left">引用不同对象 True</td>
+</tr>
+</tbody>
+</table><a id="more"></a>
+
+
+
+<ul>
+<li><strong>注意：</strong><ol>
+<li>8个比较运算符优先级相同</li>
+<li>Python允许x&lt;y&lt;=z等链式比较，它相当于(x&lt;y)and(y&lt;=z)</li>
+<li>复数不能比较大小，只能比较是否相等</li>
+<li>除整数、浮点数、字符串可以比较外，所有其他类型的值不能直接比较</li>
+<li>没有括号下，先进行算术运算或函数运算(先+-*/)，再进行比较</li>
+</ol>
+</li>
+<li>Python的逻辑运算符</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">运算符</th>
+<th style="text-align:left">操作</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">and</td>
+<td style="text-align:left">逻辑与</td>
+<td style="text-align:left">a and b,a和b同时为True才为True，否者为False</td>
+</tr>
+<tr>
+<td style="text-align:left">or</td>
+<td style="text-align:left">逻辑或</td>
+<td style="text-align:left">a or b，a或b至少有一个为True则为True，否者为False</td>
+</tr>
+<tr>
+<td style="text-align:left">not</td>
+<td style="text-align:left">逻辑非</td>
+<td style="text-align:left">not a，a为False时为真</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>注意：</strong><ol>
+<li>优先级：算术运算符&gt;关系运算符&gt;逻辑运算符</li>
+<li><strong>无括号下：</strong>not&gt;and&gt;or</li>
+<li>短路求值：and和or;如<strong>and</strong>有一个为<strong>假</strong>那么后面将不进行逻辑运算，直接逻辑为<strong>假</strong>；如<strong>or</strong>有一个为<strong>真</strong>，那么后面不进行逻辑运算，整个式子为<strong>真</strong></li>
+<li>快速查找成员：in 和 not in，在还是不再</li>
+</ol>
+</li>
+</ul>
+<h5 id="任务2-5-闰年判断"><a href="#任务2-5-闰年判断" class="headerlink" title="任务2-5 闰年判断"></a>任务2-5 闰年判断</h5><p>任务描述：编写一个程序，判断某年是否为闰年</p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>打赏一下吧!</br>Donate comment here!</div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="紫印罗兰 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="紫印罗兰 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python关系运算符/" rel="tag"># Python关系运算符</a>
+              <a href="/tags/Python逻辑运算符/" rel="tag"># Python逻辑运算符</a>
+              <a href="/tags/关系运算符和逻辑运算符/" rel="tag"># 关系运算符和逻辑运算符</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/posts/fa3ab1b6.html" rel="next" title="Python算术运算符及其表达式">
+                  <i class="fa fa-chevron-left"></i> Python算术运算符及其表达式
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/posts/d136ea2c.html" rel="prev" title="Python赋值运算符">
+                  Python赋值运算符 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80MjkzMS8xOTQ3Nw=="></div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#上节任务"><span class="nav-number">1.</span> <span class="nav-text">上节任务</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#任务2-4-计算圆锥体的体积和表面积"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">任务2-4 计算圆锥体的体积和表面积</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本篇正文"><span class="nav-number">2.</span> <span class="nav-text">本篇正文</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#任务2-5-闰年判断"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">任务2-5 闰年判断</span></a></li></ol></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="紫印罗兰"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">紫印罗兰</p>
+  <div class="site-description" itemprop="description">分享即是快乐</br>Sharing is Happiness</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zhiwen-chen" title="GitHub → https://github.com/zhiwen-chen" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:admin@vseal.cn" title="E-Mail → mailto:admin@vseal.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.vseal.cn" title="http://www.vseal.cn" rel="noopener" target="_blank">Vseal</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://quan.vseal.cn" title="http://quan.vseal.cn" rel="noopener" target="_blank">紫印有券</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">紫印罗兰 <i class="fa fa-heart" aria-hidden="true"></i> Sharing is Happiness</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+  <script>
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66489812";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script color='0,23,255' opacity='0.5' zIndex='-1' count='99' src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<script>
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+</body>
+</html>

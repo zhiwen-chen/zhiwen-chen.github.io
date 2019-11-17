@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="紫印罗兰的博客" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="常用” “或’ ‘或’’’ ‘’’括起来，同时使用反斜杠\转义特殊字符的一段文字。 注意 字符串前加r，反斜杠不转义；如r&amp;#39;\t\n\u&amp;#39; 连接字符串，str1 + str2。字符串重复 str1 * num 。 续行符：\（后面不能有任何内容）；”””…”””或’’’…’’’续多行（没用过） 字符串索引方式：从左为0开始，从右边为-1开始到-n 字符串切片：[头下标:尾下标:步数">
+<meta name="keywords" content="Python基本数据类型,字符串">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python基本数据类型之字符串">
+<meta property="og:url" content="https://blog.vseal.cn/posts/2f83f695.html">
+<meta property="og:site_name" content="紫印罗兰的博客">
+<meta property="og:description" content="常用” “或’ ‘或’’’ ‘’’括起来，同时使用反斜杠\转义特殊字符的一段文字。 注意 字符串前加r，反斜杠不转义；如r&amp;#39;\t\n\u&amp;#39; 连接字符串，str1 + str2。字符串重复 str1 * num 。 续行符：\（后面不能有任何内容）；”””…”””或’’’…’’’续多行（没用过） 字符串索引方式：从左为0开始，从右边为-1开始到-n 字符串切片：[头下标:尾下标:步数">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-03T13:35:43.254Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python基本数据类型之字符串">
+<meta name="twitter:description" content="常用” “或’ ‘或’’’ ‘’’括起来，同时使用反斜杠\转义特殊字符的一段文字。 注意 字符串前加r，反斜杠不转义；如r&amp;#39;\t\n\u&amp;#39; 连接字符串，str1 + str2。字符串重复 str1 * num 。 续行符：\（后面不能有任何内容）；”””…”””或’’’…’’’续多行（没用过） 字符串索引方式：从左为0开始，从右边为-1开始到-n 字符串切片：[头下标:尾下标:步数">
+
+<link rel="canonical" href="https://blog.vseal.cn/posts/2f83f695.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Python基本数据类型之字符串 | 紫印罗兰的博客</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?15e86471caddc13fd2ad9355ffad739e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">紫印罗兰的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">The blog of Vseal</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-python基础教程">
+
+    <a href="/categories/Python基础教程/" rel="section"><i class="fa fa-fw fa-pencil"></i>Python基础教程</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/2f83f695.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Python基本数据类型之字符串
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-03 21:34:00 / 修改时间：21:35:43" itemprop="dateCreated datePublished" datetime="2019-11-03T21:34:00+08:00">2019-11-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>常用” “或’ ‘或’’’ ‘’’括起来，同时使用反斜杠\转义特殊字符的一段文字。</p><ul>
+<li><h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><ol>
+<li>字符串前加r，反斜杠不转义；如<code>r&#39;\t\n\u&#39;</code></li>
+<li>连接字符串，str1 + str2。字符串重复 str1 * num 。</li>
+<li>续行符：\（后面不能有任何内容）；”””…”””或’’’…’’’续多行（没用过）</li>
+<li>字符串索引方式：从左为<strong>0</strong>开始，从右边为<strong>-1</strong>开始到<strong>-n</strong></li>
+<li>字符串切片：[头下标:尾下标:步数]，[开始，结束)，<strong>前闭后开</strong>，步数不输入时，默认为1；例如<code>str =&quot;abcdefg&quot;</code> ，可以切除<strong>“abc”</strong>使用<code>str[0:3]</code>、<code>str[0:3:1]</code>，切出<strong>“cba”</strong>使用<code>str[-5:-8]</code>，切除<strong>“aceg”</strong>使用<code>str[0:7:2]</code>、<code>str[0::2]</code>。</li>
+<li>字符串不能被改变：如word[0] = ‘m’<strong>会报错</strong>。</li>
+<li>find()函数：找子字符串，如str.find(sub_str)，找到为子字符串最左侧开始位置，找不到返回<strong>-1</strong></li>
+<li>lower()全小写化，str.lower();upper()全大写,str.upper()。</li>
+<li>replace()，替换字符，如str.replace(old,new)。</li>
+</ol>
+</li>
+<li><p>常见转义字符</p>
+</li>
+</ul><a id="more"></a>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">转义字符</th>
+<th style="text-align:left">含义</th>
+<th style="text-align:left">转义字符</th>
+<th style="text-align:left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">\’</td>
+<td style="text-align:left">单引号</td>
+<td style="text-align:left">\v</td>
+<td style="text-align:left">纵向制表符</td>
+</tr>
+<tr>
+<td style="text-align:left">\”</td>
+<td style="text-align:left">双引号</td>
+<td style="text-align:left">\r</td>
+<td style="text-align:left">回车符</td>
+</tr>
+<tr>
+<td style="text-align:left">\a</td>
+<td style="text-align:left">发出系统响铃声</td>
+<td style="text-align:left">\f</td>
+<td style="text-align:left">换页符</td>
+</tr>
+<tr>
+<td style="text-align:left">\b</td>
+<td style="text-align:left">退格符</td>
+<td style="text-align:left">\o</td>
+<td style="text-align:left">八进制数代表的符号</td>
+</tr>
+<tr>
+<td style="text-align:left">\n</td>
+<td style="text-align:left">换行符</td>
+<td style="text-align:left">\x</td>
+<td style="text-align:left">十六进制代表的字符</td>
+</tr>
+<tr>
+<td style="text-align:left">\t</td>
+<td style="text-align:left">横向制表符</td>
+<td style="text-align:left">\000</td>
+<td style="text-align:left">终止符，后面的字符全部忽略</td>
+</tr>
+</tbody>
+</table>
+<p><strong>【例 2-2】</strong>字符串数据类型测试。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">mystr=<span class="string">'I \' am a student'</span></span><br><span class="line">print(mystr,type(mystr),len(<span class="string">'My major is computer.'</span>))</span><br><span class="line">print(<span class="string">'c:\\address\name'</span>)</span><br><span class="line">print(<span class="string">r'c:\\address\name'</span>)</span><br><span class="line">print(<span class="string">'hello, '</span>+mystr,mystr*<span class="number">2</span>)</span><br><span class="line">print(mystr[<span class="number">3</span>:<span class="number">5</span>])</span><br><span class="line">print(mystr+<span class="string">'\</span></span><br><span class="line"><span class="string">    My major is computer'</span>)</span><br><span class="line">print(mystr.find(<span class="string">'am'</span>))</span><br><span class="line">print(mystr.lower(),mystr.upper())</span><br><span class="line">print(mystr.replace(<span class="string">'student'</span>,<span class="string">'teacher'</span>))</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>常用字符串操作函数一览表</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字符串函数名</th>
+<th style="text-align:left">功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">len(str)</td>
+<td style="text-align:left">获取长度</td>
+</tr>
+<tr>
+<td style="text-align:left">strcpy(str1,str2)</td>
+<td style="text-align:left">复制str2到str1后面</td>
+</tr>
+<tr>
+<td style="text-align:left">strcat(str1,str2)</td>
+<td style="text-align:left">连接字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">strcmp(str1,str2)</td>
+<td style="text-align:left">比较字符串大小</td>
+</tr>
+<tr>
+<td style="text-align:left">S.find(substr[,start[,end]])</td>
+<td style="text-align:left">找到返回<strong>开始</strong>一个字母的索引，找不到返回-1</td>
+</tr>
+<tr>
+<td style="text-align:left">S.index(substr[,start[,end]])</td>
+<td style="text-align:left">找到返回<strong>开始</strong>一个字母的索引，找不到返回runtime error</td>
+</tr>
+<tr>
+<td style="text-align:left">S.rfind(substr[,start[,end]])</td>
+<td style="text-align:left">找到返回<strong>最后</strong>一个字母的索引，找不到返回-1</td>
+</tr>
+<tr>
+<td style="text-align:left">S.rindex(substr[,start[,end]])</td>
+<td style="text-align:left">找到返回<strong>最后</strong>一个字母的索引，找不到返回runtime error</td>
+</tr>
+<tr>
+<td style="text-align:left">S.count(substr[,start[,end]])</td>
+<td style="text-align:left">返回substr在S中出现次数</td>
+</tr>
+<tr>
+<td style="text-align:left">S.replace(oldstr,newstr[,count])</td>
+<td style="text-align:left">替换字符串，count为替换字数</td>
+</tr>
+<tr>
+<td style="text-align:left">S.strip([chars])</td>
+<td style="text-align:left">指定S中<strong>前、后</strong>由chars指定的特殊字符全部去掉</td>
+</tr>
+<tr>
+<td style="text-align:left">S.expandtabs([tabsize])</td>
+<td style="text-align:left">把tab替换成空格</td>
+</tr>
+<tr>
+<td style="text-align:left">S.split([sep[,maxsplit]])</td>
+<td style="text-align:left">以sep分割符，分割成列表对象，maxsplit表示最大分割次数</td>
+</tr>
+<tr>
+<td style="text-align:left">S.splitlines([keepnds])</td>
+<td style="text-align:left">按照行分隔符，分割成列表对象</td>
+</tr>
+<tr>
+<td style="text-align:left">S.join(sep)</td>
+<td style="text-align:left">通过sep指定字符重新连接<strong>所有元素，通常为列表对象</strong>为字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">S.swapcase()</td>
+<td style="text-align:left">字符串大小写互换</td>
+</tr>
+<tr>
+<td style="text-align:left">S.capitalize()</td>
+<td style="text-align:left">字符串首字母大小</td>
+</tr>
+<tr>
+<td style="text-align:left">str.strip()</td>
+<td style="text-align:left">去掉字符串<strong>两边</strong>的空格</td>
+</tr>
+<tr>
+<td style="text-align:left">str.lstrip()</td>
+<td style="text-align:left">去掉字符串<strong>左边</strong>的空格</td>
+</tr>
+<tr>
+<td style="text-align:left">str.rstrip()</td>
+<td style="text-align:left">去掉字符串<strong>右边</strong>的空格</td>
+</tr>
+<tr>
+<td style="text-align:left">S.encode([encoding[,errors]])</td>
+<td style="text-align:left">编码</td>
+</tr>
+<tr>
+<td style="text-align:left">S.decode([encoding[,errors]])</td>
+<td style="text-align:left">解码</td>
+</tr>
+<tr>
+<td style="text-align:left">S.startwith(prefix[start[,end]])</td>
+<td style="text-align:left">判断S是否以prefix开头</td>
+</tr>
+<tr>
+<td style="text-align:left">S.endwith(suffix[start[,end]])</td>
+<td style="text-align:left">判断S是否以suffix结尾</td>
+</tr>
+<tr>
+<td style="text-align:left">S.isalnum()</td>
+<td style="text-align:left">是不是全是字母和数字，<strong>至少有一个字符</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">S.isalpha()</td>
+<td style="text-align:left">是不是全是字母，至少一个<strong>字符</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">S.isdigit()</td>
+<td style="text-align:left">是否全为数字，至少一个<strong>数字</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">S.isspace()</td>
+<td style="text-align:left">是否全是空白字符，并且至少一个空格</td>
+</tr>
+<tr>
+<td style="text-align:left">S.islower()</td>
+<td style="text-align:left">是否全是<strong>小写</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">S.isupper()</td>
+<td style="text-align:left">是否全是<strong>大写</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">S.istitle()</td>
+<td style="text-align:left">是否<strong>首字母大写</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">S.rjust(width)</td>
+<td style="text-align:left">获取固定长度，右对齐，左边不够空格补充</td>
+</tr>
+<tr>
+<td style="text-align:left">S.ljust(width)</td>
+<td style="text-align:left">获取固定长度，左对齐，右边不够空格补充</td>
+</tr>
+<tr>
+<td style="text-align:left">S.center(width)</td>
+<td style="text-align:left">获取固定长度，中间对齐，两侧不够空格补充</td>
+</tr>
+<tr>
+<td style="text-align:left">S.zfill(width)</td>
+<td style="text-align:left">获取固定长度，右对齐，左边不够<strong>0</strong>补充</td>
+</tr>
+</tbody>
+</table>
+<p><strong>【例 2-3】</strong>字符串函数使用举例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">mystr=<span class="string">'PythonInteresting'</span></span><br><span class="line">print(<span class="string">'字符串字符大小写变换函数示例：'</span>)</span><br><span class="line">print(<span class="string">'%s lower=%s'</span> % (mystr,mystr.lower()))</span><br><span class="line">print(<span class="string">'%s upper=%s'</span> % (mystr,mystr.upper()))</span><br><span class="line">print(<span class="string">'%s swapcase=%s'</span> % (mystr,mystr.swapcase()))</span><br><span class="line">print(<span class="string">'%s capitalize=%s'</span> % (mystr,mystr.capitalize()))</span><br><span class="line">print(<span class="string">'%s title=%s'</span> % (mystr,mystr.title()))</span><br><span class="line">print(<span class="string">'字符串格式相关函数示例：'</span>)</span><br><span class="line">print(<span class="string">'%s ljust=%s'</span> % (mystr,mystr.ljust(<span class="number">20</span>)))</span><br><span class="line">print(<span class="string">'%s rjust=%s'</span> % (mystr,mystr.rjust(<span class="number">20</span>)))</span><br><span class="line">print(<span class="string">'%s center=%s'</span> % (mystr,mystr.center(<span class="number">20</span>)))</span><br><span class="line">print(<span class="string">'%s zfill=%s'</span> % (mystr,mystr.zfill(<span class="number">20</span>)))</span><br><span class="line">print(<span class="string">'字符串搜索相关函数示例：'</span>)</span><br><span class="line">print(<span class="string">'%s find on=%d'</span> % (mystr,mystr.find(<span class="string">'on'</span>)))</span><br><span class="line">print(<span class="string">'%s find t=%d'</span> % (mystr,mystr.find(<span class="string">'t'</span>)))</span><br><span class="line">print(<span class="string">'%s find t from %d=%d'</span> % (mystr,<span class="number">1</span>,mystr.find(<span class="string">'t'</span>,<span class="number">1</span>)))</span><br><span class="line">print(<span class="string">'%s find t from %d to %d=%d'</span> % (mystr,<span class="number">1</span>,<span class="number">2</span>,mystr.find(<span class="string">'t'</span>,<span class="number">1</span>,<span class="number">2</span>)))</span><br><span class="line">print(<span class="string">'%s rfind t=%d'</span> % (mystr,mystr.rfind(<span class="string">'t'</span>)))</span><br><span class="line">print(<span class="string">'%s count t=%d'</span> % (mystr,mystr.count(<span class="string">'t'</span>)))</span><br><span class="line">print(<span class="string">'字符串替换相关函数示例：'</span>)</span><br><span class="line">print(<span class="string">'%s replace t to *=%s'</span> % (mystr,mystr.replace(<span class="string">'t'</span>, <span class="string">'&amp;'</span>)))</span><br><span class="line">print(<span class="string">'%s replace t to *=%s'</span> % (mystr,mystr.replace(<span class="string">'t'</span>, <span class="string">'&amp;'</span>,<span class="number">1</span>)))</span><br><span class="line">print(<span class="string">'字符串分隔相关函数示例：'</span>)</span><br><span class="line">mynewstr=<span class="string">'apple banana orange peach'</span></span><br><span class="line">print(<span class="string">'%s strip=%s'</span> % (mynewstr,mynewstr.split()))</span><br><span class="line">mynewstr=<span class="string">'apple;banana;orange;peach'</span></span><br><span class="line">print(<span class="string">'%s strip=%s'</span> % (mynewstr,mynewstr.split(<span class="string">';'</span>)))</span><br><span class="line">print(<span class="string">'字符串判断相关函数示例：'</span>)</span><br><span class="line">print(<span class="string">'%s startwith t=%s'</span> % (mystr,mystr.startswith(<span class="string">'P'</span>)))</span><br><span class="line">print(<span class="string">'%s endwith d=%s'</span> % (mystr,mystr.endswith(<span class="string">'m'</span>)))</span><br><span class="line">print(<span class="string">'%s isalnum=%s'</span> % (mystr,mystr.isalnum()))</span><br><span class="line">print(<span class="string">'%s isalnum=%s'</span> % (mystr,mystr.isalnum()))</span><br><span class="line">print(<span class="string">'%s isalpha=%s'</span> % (mystr,mystr.isalpha()))</span><br><span class="line">print(<span class="string">'%s isupper=%s'</span> % (mystr,mystr.isupper()))</span><br><span class="line">print(<span class="string">'%s islower=%s'</span> % (mystr,mystr.islower()))</span><br><span class="line">print(<span class="string">'%s isdigit=%s'</span> % (mystr,mystr.isdigit()))</span><br><span class="line">strnew=<span class="string">'3478'</span></span><br><span class="line">print(<span class="string">'%s isdigit=%s'</span> % (strnew,strnew.isdigit()))</span><br></pre></td></tr></table></figure></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>打赏一下吧!</br>Donate comment here!</div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="紫印罗兰 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="紫印罗兰 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python基本数据类型/" rel="tag"># Python基本数据类型</a>
+              <a href="/tags/字符串/" rel="tag"># 字符串</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/posts/322bc548.html" rel="next" title="Python基本数据类型之数值">
+                  <i class="fa fa-chevron-left"></i> Python基本数据类型之数值
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/posts/48bfbe8a.html" rel="prev" title="Python基本数据类型之变量 ">
+                  Python基本数据类型之变量  <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80MjkzMS8xOTQ3Nw=="></div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#注意"><span class="nav-number">1.</span> <span class="nav-text">注意</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="紫印罗兰"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">紫印罗兰</p>
+  <div class="site-description" itemprop="description">分享即是快乐</br>Sharing is Happiness</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zhiwen-chen" title="GitHub → https://github.com/zhiwen-chen" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:admin@vseal.cn" title="E-Mail → mailto:admin@vseal.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.vseal.cn" title="http://www.vseal.cn" rel="noopener" target="_blank">Vseal</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://quan.vseal.cn" title="http://quan.vseal.cn" rel="noopener" target="_blank">紫印有券</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">紫印罗兰 <i class="fa fa-heart" aria-hidden="true"></i> Sharing is Happiness</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+  <script>
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66489812";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script color='0,23,255' opacity='0.5' zIndex='-1' count='99' src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<script>
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+</body>
+</html>

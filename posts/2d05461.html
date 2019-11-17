@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="紫印罗兰的博客" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="本节内容：print()函数 简单玩法：  print(var1,var2)#直接输出变量 print(“str”,var)#字符串后加变量 print(“words %d %s “ %(num,str))#传说中的占位符   普通玩法：  语法格式：print(*objects,sep=’’,end=’\n’[,file=sys.stdout,flush=False])#括号[]内的参数很少使用">
+<meta name="keywords" content="Python输出,输出">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python输出">
+<meta property="og:url" content="https://blog.vseal.cn/posts/2d05461.html">
+<meta property="og:site_name" content="紫印罗兰的博客">
+<meta property="og:description" content="本节内容：print()函数 简单玩法：  print(var1,var2)#直接输出变量 print(“str”,var)#字符串后加变量 print(“words %d %s “ %(num,str))#传说中的占位符   普通玩法：  语法格式：print(*objects,sep=’’,end=’\n’[,file=sys.stdout,flush=False])#括号[]内的参数很少使用">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-15T15:38:41.742Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python输出">
+<meta name="twitter:description" content="本节内容：print()函数 简单玩法：  print(var1,var2)#直接输出变量 print(“str”,var)#字符串后加变量 print(“words %d %s “ %(num,str))#传说中的占位符   普通玩法：  语法格式：print(*objects,sep=’’,end=’\n’[,file=sys.stdout,flush=False])#括号[]内的参数很少使用">
+
+<link rel="canonical" href="https://blog.vseal.cn/posts/2d05461.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Python输出 | 紫印罗兰的博客</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?15e86471caddc13fd2ad9355ffad739e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">紫印罗兰的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">The blog of Vseal</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-python基础教程">
+
+    <a href="/categories/Python基础教程/" rel="section"><i class="fa fa-fw fa-pencil"></i>Python基础教程</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/2d05461.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing is Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Python输出
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-14 21:33:47" itemprop="dateCreated datePublished" datetime="2019-11-14T21:33:47+08:00">2019-11-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-15 23:38:41" itemprop="dateModified" datetime="2019-11-15T23:38:41+08:00">2019-11-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><strong>本节内容：print()函数</strong></p><ul>
+<li><p>简单玩法：</p>
+<ol>
+<li>print(var1,var2)#直接输出变量</li>
+<li>print(“str”,var)#字符串后加变量</li>
+<li>print(“words %d %s “ %(num,str))#传说中的占位符</li>
+</ol>
+</li>
+<li><p>普通玩法：</p>
+<ol>
+<li>语法格式：print(*objects,sep=’’,end=’\n’[,file=sys.stdout,flush=False])#括号[]内的参数很少使用</li>
+<li>参数说明：objects转为字符串的对象，然后写入file参数指定的文件，sys.stdout为标准输出;sep每个对象间分隔的参数，默认是空格；end为结尾参数，默认为换行。<br>1.有趣的示例：<ol>
+<li>print(‘Hello’,’world!’,sep=’**‘) 输出 Hello**world</li>
+<li>print()默认输出后换行，不想换行可以print(end=’’)修改结尾参数</li>
+<li>使用转义字符控制输出格式如\t(8个空格的制表符) \n</li>
+<li>使用转义字符输出特殊字符，\，\’，\”等</li>
+<li>字符对齐：左对齐ljust(n)、右对齐rjust(n)和居中center(n),n为最大显示字符个数；如<pre><code>str = &quot;this is string example....wow!!!&quot;;
+print str.ljust(50);
+</code></pre></li>
+<li>zifill()函数0左填充<pre><code>print str.zifill();
+</code></pre></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul><a id="more"></a>
+
+<ul>
+<li>高级玩法之  .format()函数:<br>使用格式print(‘str’.format())<ol>
+<li>花括号声明{}，用于渲染前的参数引用声明。括号里面可以使用<strong>变量名</strong>或<strong>序号</strong>引用。</li>
+<li>冒号 ‘:’后面带填充的字符，只能是一个字符，默认使用空格填充。</li>
+<li>字符位数声明，用数字表示。</li>
+<li>精度的声明，常跟类型f使用。</li>
+<li>逗号(,)是千分位的声明。</li>
+<li>变量类型的声明：字符串s、数字d、浮点数f。</li>
+<li>对齐方向符号：&lt;左对齐，^居中，&gt;右对齐；后面可带宽度。</li>
+<li>属性访问符号中括号[]。</li>
+<li>使用感叹号!后接a、r、s，声明是使用哪种模式，如ACSII模式，引用<strong>repr</strong>或<strong>str</strong>。</li>
+<li>增加类魔法函数<strong>format</strong>(self,format)，可以根据format前的字符串格式来定制不同的显示。例如’{:XXXX}’，此时XXXX作为参数传入<strong>format</strong>()函数。</li>
+</ol>
+</li>
+</ul>
+<h5 id="【例2-4】-format-函数应用示例。代码如下："><a href="#【例2-4】-format-函数应用示例。代码如下：" class="headerlink" title="【例2-4】 format()函数应用示例。代码如下："></a>【例2-4】 format()函数应用示例。代码如下：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="comment">#括号及其里面的字符 (称作格式化字段) 将会被 format() 中的参数替换。</span></span><br><span class="line">print(<span class="string">'We are the &#123;&#125; who say "&#123;&#125;!"'</span>.format(<span class="string">'knights'</span>, <span class="string">'Ni'</span>))</span><br><span class="line"><span class="comment">#在括号中的数字用于指向传入对象在 format() 中的位置</span></span><br><span class="line">print(<span class="string">'&#123;0&#125; and &#123;1&#125;'</span>.format(<span class="string">'chicken'</span>, <span class="string">'eggs'</span>))</span><br><span class="line">print(<span class="string">'&#123;1&#125; and &#123;0&#125;'</span>.format(<span class="string">'chicken'</span>, <span class="string">'eggs'</span>))</span><br><span class="line"><span class="comment">#如果在 format() 中使用了关键字参数, 那么它们的值会指向使用该名字的参数。</span></span><br><span class="line">print(<span class="string">'This &#123;food&#125; is &#123;adjective&#125;.'</span>.format(\</span><br><span class="line">food=<span class="string">'milk'</span>, adjective=<span class="string">'absolutely horrible'</span>))  </span><br><span class="line"><span class="comment">#位置及关键字参数可以任意的结合</span></span><br><span class="line">print(<span class="string">'The story of &#123;0&#125;, &#123;1&#125;, and &#123;other&#125;.'</span>.\</span><br><span class="line">format(<span class="string">'Bill'</span>, <span class="string">'John'</span>,other=<span class="string">'Dan'</span>))</span><br><span class="line"><span class="comment">#可选项 ':' 和格式标识符可以跟着字段名。 这就允许对值进行更好的格式化。 </span></span><br><span class="line"><span class="comment">#下面的例子将 Pi 保留到小数点后三位： </span></span><br><span class="line">print(<span class="string">'The value of PI is approximately &#123;0:.3f&#125;.'</span>.format(math.pi))</span><br><span class="line"><span class="comment">#在 ':' 后传入一个整数, 可以保证该域至少有这么多的宽度。 用于美化表格时很有用</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">'&#123;0:10&#125; ==&gt; &#123;1:10d&#125;'</span>.format(<span class="string">"Bill"</span>,<span class="number">8752</span>))</span><br><span class="line"><span class="comment"># :冒号+空白填充+右对齐+固定宽度18+浮点精度.2+浮点数声明f</span></span><br><span class="line">print(<span class="string">'&#123;:&gt;18,.2f&#125;'</span>.format(<span class="number">76305784.0</span>))</span><br><span class="line"><span class="comment"># 右对齐，使用空格填充</span></span><br><span class="line">print(<span class="string">'&#123;:&gt;8&#125;'</span>.format(<span class="string">'286'</span>))</span><br><span class="line"><span class="comment"># 右对齐，使用0填充</span></span><br><span class="line">print(<span class="string">'&#123;:0&gt;8&#125;'</span>.format(<span class="string">'286'</span>))</span><br><span class="line"><span class="comment"># 右对齐，使用*填充</span></span><br><span class="line">print(<span class="string">'&#123;:*&gt;8&#125;'</span>.format(<span class="string">'286'</span>))</span><br><span class="line"><span class="comment"># 用不同的进制输出数据</span></span><br><span class="line">print(<span class="string">'二进制输出&#123;:b&#125;'</span>.format(<span class="number">17</span>))</span><br><span class="line">print(<span class="string">'千分位输出&#123;:,&#125;'</span>.format(<span class="number">1234567890</span>))</span><br><span class="line"><span class="comment"># 铜鼓关键字输出</span></span><br><span class="line">print(<span class="string">'&#123;name&#125;,&#123;cardNo&#125;'</span>.format(cardNo=<span class="number">10012001</span>,name=<span class="string">'cat'</span>) )</span><br><span class="line"><span class="comment"># 输出正负号</span></span><br><span class="line">print(<span class="string">'&#123;:+f&#125;; &#123;:+f&#125;'</span>.format(<span class="number">25.168</span>, <span class="number">-98.705</span>))</span><br><span class="line">print(<span class="string">'The rate is: &#123;:.2%&#125;'</span>.format(<span class="number">0.7892</span>))</span><br><span class="line"></span><br><span class="line">fruit = (<span class="string">'apple'</span>,<span class="string">'peach'</span>,<span class="string">'orange'</span>)</span><br><span class="line"><span class="comment"># 通过下表匹配参数</span></span><br><span class="line">print(<span class="string">'fruit: &#123;0[2]&#125;;  &#123;0[0]&#125;'</span>.format(fruit))</span><br></pre></td></tr></table></figure>
+<h5 id="任务2-6-位运算实例"><a href="#任务2-6-位运算实例" class="headerlink" title="任务2-6 位运算实例"></a>任务2-6 位运算实例</h5><p>任务描述：编写一个Python程序，将x中从p开始的n个(二进制)位设置为y中最右边n位的值，x的其余各位保持不变。<br>解题思路下节展示~</p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>打赏一下吧!</br>Donate comment here!</div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="紫印罗兰 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="紫印罗兰 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python输出/" rel="tag"># Python输出</a>
+              <a href="/tags/输出/" rel="tag"># 输出</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/posts/bdee3b16.html" rel="next" title="Python输入">
+                  <i class="fa fa-chevron-left"></i> Python输入
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/posts/bebfcfa4.html" rel="prev" title="Python复数">
+                  Python复数 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80MjkzMS8xOTQ3Nw=="></div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#【例2-4】-format-函数应用示例。代码如下："><span class="nav-number">1.</span> <span class="nav-text">【例2-4】 format()函数应用示例。代码如下：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#任务2-6-位运算实例"><span class="nav-number">2.</span> <span class="nav-text">任务2-6 位运算实例</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="紫印罗兰"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">紫印罗兰</p>
+  <div class="site-description" itemprop="description">分享即是快乐</br>Sharing is Happiness</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zhiwen-chen" title="GitHub → https://github.com/zhiwen-chen" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:admin@vseal.cn" title="E-Mail → mailto:admin@vseal.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.vseal.cn" title="http://www.vseal.cn" rel="noopener" target="_blank">Vseal</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://quan.vseal.cn" title="http://quan.vseal.cn" rel="noopener" target="_blank">紫印有券</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">紫印罗兰 <i class="fa fa-heart" aria-hidden="true"></i> Sharing is Happiness</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+  <script>
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66489812";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script color='0,23,255' opacity='0.5' zIndex='-1' count='99' src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<script>
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+</body>
+</html>
