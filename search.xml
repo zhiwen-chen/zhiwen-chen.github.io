@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python 选择结构之if-else]]></title>
+    <url>%2Fposts%2F59920642.html</url>
+    <content type="text"><![CDATA[上篇回顾上篇回顾任务3-1 计算椭球的表面积和体积设计思路：根据椭球在xyz笛卡尔坐标系里面的方程：$$\frac{x^{2}}{a}+\frac{y^{2}}{b}+\frac{z^{2}}{c}=1$$。椭球体表面积公式：$$S=\frac{4}{3}ab\pi$$，再根据椭球体的体积公式：$$V=\frac{4}{3} \pi abc$$。设置输入的a、b、c，输出S和V即可。 示例源码：关注微信公众号”hut-fsd“，回复37py3-1即可获取~ 本篇正文if-else语法：1234if 条件语句: 执行语句1else： 执行语句2 注意： 条件语句后面必须有冒号 ‘:’ 执行语句与if和else之间的缩进决定层次，而不是使用 ‘{}’ 数值类数据：0为假，其他为真；字符串或集合：空为假，其他为真。 else必须有一个if相配对。 任务3-2 输出最大的数任务描述：编写一个Python程序，用户输入3个数，输出最大的数。任务思路：下节再续~ 任务3-3 计算一元二次方程的根任务描述：编写Python程序员，计算一个一元二次方程任务思路：下节再续~]]></content>
+      <categories>
+        <category>Python基础教程</category>
+      </categories>
+      <tags>
+        <tag>Python选择结构</tag>
+        <tag>Python流程处理</tag>
+        <tag>if-else</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python流程控制之顺序结构]]></title>
+    <url>%2Fposts%2F58ca4ef9.html</url>
+    <content type="text"><![CDATA[上篇回顾任务2-9 计算汽车贷款设计思路：根据之前所讲的math模块，自行推出计算式，然后求解。演示源码：关注微信公众号”hut-fsd“，回复37py2-9即可查看~本篇正文从这里开始我们步入第三章-Python流程控制，本节主讲顺序结构。顺序结构：按照语句的先后顺序执行，每条语句只执行一次，简单吧，这个之前内容中已经实现了很多次咯，如果有所迷糊，看看之前的内容吧。 任务3-1 计算椭球的表面积和体积任务描述：设计一个Python程序，算出椭球的表面积和体积。解题思路，下期分享~]]></content>
+      <categories>
+        <category>Python基础教程</category>
+      </categories>
+      <tags>
+        <tag>Python流程控制</tag>
+        <tag>Python顺序结构</tag>
+        <tag>顺序结构</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Python-math模块]]></title>
     <url>%2Fposts%2F98dbd912.html</url>
     <content type="text"><![CDATA[本篇正文 引入math模块 1import math 常用数学函数 ceil:取大于等于x的最小的整数值，如果x是一个整数，则返回x copysign:把y的正负号加到x前面，可以使用0 cos:求x的余弦，x必须是弧度 degrees:把x从弧度转换成角度 e:表示一个常量 exp:返回math.e,也就是2.71828的x次方 expm1:返回math.e的x(其值为2.71828)次方的值减１ fabs:返回x的绝对值 factorial:取x的阶乘的值 floor:取小于等于x的最大的整数值，如果x是一个整数，则返回自身 fmod:得到x/y的余数，其值是一个浮点数 frexp:返回一个元组(m,e),其计算方式为：x分别除0.5和1,得到一个值的范围 fsum:对迭代器里的每个元素进行求和操作 gcd:返回x和y的最大公约数 hypot:如果x是不是无穷大的数字,则返回True,否则返回False isfinite:如果x是正无穷大或负无穷大，则返回True,否则返回False isinf:如果x是正无穷大或负无穷大，则返回True,否则返回False isnan:如果x不是数字True,否则返回False ldexp:返回x*(2**i)的值 log:返回x的自然对数，默认以e为基数，base参数给定时，将x的对数返回给定的base,计算式为：log(x)/log(base) log10:返回x的以10为底的对数 log1p:返回x+1的自然对数(基数为e)的值 log2:返回x的基2对数 modf:返回由x的小数部分和整数部分组成的元组 pi:数字常量，圆周率 pow:返回x的y次方，即x**y radians:把角度x转换成弧度 sin:求x(x为弧度)的正弦值 sqrt:求x的平方根 tan:返回x(x为弧度)的正切值 trunc:返回x的整数部分 任务2-9 计算汽车贷款任务描述：编写一个Python程序，用户输入贷款额、利率和贷款年限后，计算每月的还款额。 还款额= $$\frac{i }{1-(1+i)^{-12n}}\times A$$，$$i=r/1200$$]]></content>

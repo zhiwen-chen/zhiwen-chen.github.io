@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2019-11-17T10:31:48.213Z</updated>
+  <updated>2019-11-20T14:46:58.250Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python 选择结构之if-else</title>
+    <link href="https://blog.vseal.cn/posts/59920642.html"/>
+    <id>https://blog.vseal.cn/posts/59920642.html</id>
+    <published>2019-11-20T14:45:34.000Z</published>
+    <updated>2019-11-20T14:46:58.250Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上篇回顾上篇回顾&quot;&gt;&lt;a href=&quot;#上篇回顾上篇回顾&quot; class=&quot;headerlink&quot; title=&quot;上篇回顾上篇回顾&quot;&gt;&lt;/a&gt;上篇回顾上篇回顾&lt;/h2&gt;&lt;h5 id=&quot;任务3-1-计算椭球的表面积和体积&quot;&gt;&lt;a href=&quot;#任务3-1-计算椭球的表面积和体积&quot; class=&quot;headerlink&quot; title=&quot;任务3-1 计算椭球的表面积和体积&quot;&gt;&lt;/a&gt;任务3-1 计算椭球的表面积和体积&lt;/h5&gt;&lt;p&gt;设计思路：根据椭球在xyz笛卡尔坐标系里面的方程：$$\frac{x^{2}}{a}+\frac{y^{2}}{b}+\frac{z^{2}}{c}=1$$。椭球体表面积公式：$$S=\frac{4}{3}ab\pi$$，再根据椭球体的体积公式：$$V=\frac{4}{3} \pi abc$$。设置输入的a、b、c，输出S和V即可。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="if-else" scheme="https://blog.vseal.cn/tags/if-else/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python流程控制之顺序结构</title>
+    <link href="https://blog.vseal.cn/posts/58ca4ef9.html"/>
+    <id>https://blog.vseal.cn/posts/58ca4ef9.html</id>
+    <published>2019-11-19T13:53:17.000Z</published>
+    <updated>2019-11-19T13:54:38.301Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上篇回顾&quot;&gt;&lt;a href=&quot;#上篇回顾&quot; class=&quot;headerlink&quot; title=&quot;上篇回顾&quot;&gt;&lt;/a&gt;上篇回顾&lt;/h2&gt;&lt;h5 id=&quot;任务2-9-计算汽车贷款&quot;&gt;&lt;a href=&quot;#任务2-9-计算汽车贷款&quot; class=&quot;headerlink&quot; title=&quot;任务2-9 计算汽车贷款&quot;&gt;&lt;/a&gt;任务2-9 计算汽车贷款&lt;/h5&gt;&lt;p&gt;设计思路：根据之前所讲的math模块，自行推出计算式，然后求解。&lt;br&gt;演示源码：关注微信公众号”&lt;strong&gt;hut-fsd&lt;/strong&gt;“，回复&lt;strong&gt;37py2-9&lt;/strong&gt;即可查看~&lt;/p&gt;&lt;hr&gt;&lt;h2 id=&quot;本篇正文&quot;&gt;&lt;a href=&quot;#本篇正文&quot; class=&quot;headerlink&quot; title=&quot;本篇正文&quot;&gt;&lt;/a&gt;本篇正文&lt;/h2&gt;&lt;p&gt;从这里开始我们步入第三章-Python流程控制，本节主讲顺序结构。&lt;/p&gt;&lt;p&gt;顺序结构：按照语句的先后顺序执行，每条语句只执行一次，简单吧，这个之前内容中已经实现了很多次咯，如果有所迷糊，看看之前的内容吧。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python流程控制" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/"/>
+    
+      <category term="Python顺序结构" scheme="https://blog.vseal.cn/tags/Python%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="顺序结构" scheme="https://blog.vseal.cn/tags/%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
   
   <entry>
     <title>Python-math模块</title>
@@ -666,59 +714,6 @@ print str.ljust(50);
     
     
       <category term="非集成环境" scheme="https://blog.vseal.cn/tags/%E9%9D%9E%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建API文本库showdoc</title>
-    <link href="https://blog.vseal.cn/posts/e245b23a.html"/>
-    <id>https://blog.vseal.cn/posts/e245b23a.html</id>
-    <published>2019-01-01T10:23:00.000Z</published>
-    <updated>2019-04-06T13:23:48.089Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;安装-Nginx&quot;&gt;&lt;a href=&quot;#安装-Nginx&quot; class=&quot;headerlink&quot; title=&quot;安装 Nginx&quot;&gt;&lt;/a&gt;安装 Nginx&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;安装nginx&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install nginx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol&gt;
-&lt;li&gt;修改 /etc/nginx/nginx.conf 文件为如下内容：&lt;/li&gt;
-&lt;/ol&gt;&lt;p&gt;&lt;strong&gt; 使用命令&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim /etc/nginx/nginx.conf&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt; 复制下面内容替换&lt;/strong&gt;&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;user nginx;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;worker_processes auto;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;error_log /var/log/nginx/error.log;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pid /run/nginx.pid;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;include /usr/share/nginx/modules/*.conf;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;events &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    worker_connections 1024;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;http &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    log_format  main  &amp;apos;$remote_addr - $remote_user [$time_local] &amp;quot;$request&amp;quot; &amp;apos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                      &amp;apos;$status $body_bytes_sent &amp;quot;$http_referer&amp;quot; &amp;apos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                      &amp;apos;&amp;quot;$http_user_agent&amp;quot; &amp;quot;$http_x_forwarded_for&amp;quot;&amp;apos;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    access_log  /var/log/nginx/access.log  main;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sendfile            on;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    tcp_nopush          on;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    tcp_nodelay         on;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    keepalive_timeout   65;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    types_hash_max_size 2048;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    include             /etc/nginx/mime.types;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    default_type        application/octet-stream;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    include /etc/nginx/conf.d/*.conf;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    server &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        listen       80;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        server_name  127.0.0.1;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        root         /var/www/html;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        index index.php index.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        error_page  404              /404.html;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        location = /40x.html &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        error_page   500 502 503 504  /50x.html;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        location = /50x.html &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        location ~ .php$ &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            root           /var/www/html;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            fastcgi_pass   127.0.0.1:9000;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            fastcgi_index  index.php;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            include        fastcgi_params;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        location ~ /.ht &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            deny  all;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="centos" scheme="https://blog.vseal.cn/categories/centos/"/>
-    
-    
-      <category term="API文档" scheme="https://blog.vseal.cn/tags/API%E6%96%87%E6%A1%A3/"/>
-    
-      <category term="showdoc" scheme="https://blog.vseal.cn/tags/showdoc/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建个人Leanote云笔记</title>
-    <link href="https://blog.vseal.cn/posts/8742adce.html"/>
-    <id>https://blog.vseal.cn/posts/8742adce.html</id>
-    <published>2018-09-02T10:12:00.000Z</published>
-    <updated>2019-03-02T10:17:11.627Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;下载启动-MongoDB&quot;&gt;&lt;a href=&quot;#下载启动-MongoDB&quot; class=&quot;headerlink&quot; title=&quot;下载启动 MongoDB&quot;&gt;&lt;/a&gt;下载启动 MongoDB&lt;/h4&gt;&lt;p&gt;Leanote 依赖 MongoDB 作为数据存储，下面开始安装 MongoDB：&lt;/p&gt;&lt;ul&gt;
-&lt;li&gt;下载 MongoDB&lt;br&gt;进入 /home 目录，并下载 MongoDB：&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd /home&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;下载源码：&lt;br&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.0.1.tgz&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="centos" scheme="https://blog.vseal.cn/categories/centos/"/>
-    
-      <category term="ubuntu" scheme="https://blog.vseal.cn/categories/centos/ubuntu/"/>
-    
-    
-      <category term="云笔记" scheme="https://blog.vseal.cn/tags/%E4%BA%91%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="leanote" scheme="https://blog.vseal.cn/tags/leanote/"/>
     
   </entry>
   
