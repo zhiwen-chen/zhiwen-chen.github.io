@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2019-11-20T14:46:58.250Z</updated>
+  <updated>2019-11-22T15:43:37.234Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>if-elif-else判断语句</title>
+    <link href="https://blog.vseal.cn/posts/25d1e216.html"/>
+    <id>https://blog.vseal.cn/posts/25d1e216.html</id>
+    <published>2019-11-22T15:41:42.000Z</published>
+    <updated>2019-11-22T15:43:37.234Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务3-2-输出最大的数&quot;&gt;&lt;a href=&quot;#任务3-2-输出最大的数&quot; class=&quot;headerlink&quot; title=&quot;任务3-2 输出最大的数&quot;&gt;&lt;/a&gt;任务3-2 输出最大的数&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;设计思路：&lt;br&gt;分别定义3个变量来存放3个数。假如第一个变量是最大值，分别与第二个数和第三个数进行比较。如果发现逆序，则修改，最后输出答案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;示例程序：&lt;br&gt;关注微信公众号”&lt;strong&gt;hut-fsd&lt;/strong&gt;“，回复&lt;strong&gt;37py3-2&lt;/strong&gt;即可获取&lt;/p&gt;
+&lt;h5 id=&quot;任务3-3-计算一元二次方程的根&quot;&gt;&lt;a href=&quot;#任务3-3-计算一元二次方程的根&quot; class=&quot;headerlink&quot; title=&quot;任务3-3 计算一元二次方程的根&quot;&gt;&lt;/a&gt;任务3-3 计算一元二次方程的根&lt;/h5&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;设计思路：&lt;br&gt;根据公式$$x=\frac{-b\pm \sqrt{b^{2}-4ac}}{2a}$$可知需要3个输入量，a、b、c以及2个输出量保存方程的两根。当然需要注意a不能为0，平方根内值得必须大于等于0。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;示例程序：&lt;br&gt;关注微信公众号”&lt;strong&gt;hut-fsd&lt;/strong&gt;“，回复&lt;strong&gt;37py3-3&lt;/strong&gt;即可获取&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="if-elif-else" scheme="https://blog.vseal.cn/tags/if-elif-else/"/>
+    
+  </entry>
   
   <entry>
     <title>Python 选择结构之if-else</title>
@@ -687,33 +720,6 @@ print str.ljust(50);
       <category term="hadoop" scheme="https://blog.vseal.cn/tags/hadoop/"/>
     
       <category term="大数据" scheme="https://blog.vseal.cn/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建Ftp</title>
-    <link href="https://blog.vseal.cn/posts/9ac9cbe6.html"/>
-    <id>https://blog.vseal.cn/posts/9ac9cbe6.html</id>
-    <published>2019-03-02T07:16:00.000Z</published>
-    <updated>2019-03-02T08:53:38.307Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;基于centos环境搭建，其他环境使用命令稍有不同&lt;/p&gt;&lt;h4 id=&quot;安装并启动-FTP-服务&quot;&gt;&lt;a href=&quot;#安装并启动-FTP-服务&quot; class=&quot;headerlink&quot; title=&quot;安装并启动 FTP 服务&quot;&gt;&lt;/a&gt;安装并启动 FTP 服务&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;安装 VSFTPD&lt;br&gt;使用 &lt;strong&gt;yum &lt;/strong&gt;安装 vsftpd：&lt;/p&gt;
-&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yum install vsftpd -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;启动 VSFTPD&lt;br&gt;安装完成后，启动 FTP 服务：&lt;/p&gt;
-&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;service vsftpd start&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;启动后，可以看到系统已经监听了 21 端口：&lt;br&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;netstat -nltp | grep 21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="centos" scheme="https://blog.vseal.cn/categories/centos/"/>
-    
-    
-      <category term="非集成环境" scheme="https://blog.vseal.cn/tags/%E9%9D%9E%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83/"/>
     
   </entry>
   
