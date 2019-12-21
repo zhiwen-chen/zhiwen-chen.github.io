@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[if语句的嵌套]]></title>
+    <url>%2Fposts%2Ff2e4349a.html</url>
+    <content type="text"><![CDATA[任务3-4 成绩分等 设计思路：键盘输入数据，然后用if-elif-else判断成绩是否有效。 示例程序：关注微信公众号”hut-fsd“，回复37py3-4即可获取 嵌套的基本格式：1234567if 条件语句1: if 条件语句2: 执行语句 else: 执行语句else: 执行语句 执行判断过程：条件语句1 -&gt;条件语句2 -&gt;else 或 条件语句1 -&gt; else: 任务3-5 判断三角形的类型 任务描述：编写一个Python程序，用户输入三角形的三条边的边长，判断是否是三角形及三角形的类型：直角三角形、钝角三角形和锐角三角形。 设计思路：下期分享~]]></content>
+      <categories>
+        <category>Python基础教程</category>
+      </categories>
+      <tags>
+        <tag>Python选择结构</tag>
+        <tag>Python流程处理</tag>
+        <tag>if语句的嵌套</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[if-elif-else判断语句]]></title>
     <url>%2Fposts%2F25d1e216.html</url>
     <content type="text"><![CDATA[上期回顾任务3-2 输出最大的数 设计思路：分别定义3个变量来存放3个数。假如第一个变量是最大值，分别与第二个数和第三个数进行比较。如果发现逆序，则修改，最后输出答案。 示例程序：关注微信公众号”hut-fsd“，回复37py3-2即可获取 任务3-3 计算一元二次方程的根 设计思路：根据公式$$x=\frac{-b\pm \sqrt{b^{2}-4ac}}{2a}$$可知需要3个输入量，a、b、c以及2个输出量保存方程的两根。当然需要注意a不能为0，平方根内值得必须大于等于0。 示例程序：关注微信公众号”hut-fsd“，回复37py3-3即可获取 本篇正文语法格式1234567if 条件语句1: 执行语句elif 条件语句2: 执行语句...else: 条件语句 注意： 执行流程是从if开始逐个向后面判断的，一旦某段执行了，后面就不会进行判断了。 任务3-4 成绩分等 任务描述：编写一个Python程序，用户输入成绩，输出该成绩的等级。成绩等级划分原则为：90分以上为“优秀”，80~90分为“良好”，70~80分为“中等”，60~70分为“及格”，60分以下为“不及格”。 解题思路：下回分解~]]></content>
@@ -116,7 +129,7 @@
   <entry>
     <title><![CDATA[Python赋值运算符]]></title>
     <url>%2Fposts%2Fd136ea2c.html</url>
-    <content type="text"><![CDATA[上节内容任务2-5 闰年判断设计思路：参考之前学的逻辑判断表达式，结合闰年判断规则，年数能整除4且不被100整除，能整除400。示例源码：关注微信公众号‘湖工大风沙渡’回复37py2-5即可查看。本节内容 Python的赋值运算符 运算符 实例说明 = c=5+2 -&gt; c= 7 += c+=2 -&gt; c=c+2 -= c-=2 -&gt; c=c-2 *= c*=2 -&gt; c=c*2 /= c/=2 -&gt; c=c/2 %= c%2 -&gt; c=c%2 **= c**=2 -&gt; c=c**2 //= c//=2 -&gt; c=c//2]]></content>
+    <content type="text"><![CDATA[上节内容任务2-5 闰年判断设计思路：参考之前学的逻辑判断表达式，结合闰年判断规则，年数能整除4且不被100整除，能整除400。示例源码：关注微信公众号‘湖工大风沙渡’回复37py2-5即可查看。本节内容 Python的赋值运算符 运算符 实例说明 = c=5+2 -&gt; c= 7 += c+=2 -&gt; c=c+2 -= c-=2 -&gt; c=c-2 *= c*=2 -&gt; c=c*2 /= c/=2 -&gt; c=c/2 %= c%=2 -&gt; c=c%2 **= c**=2 -&gt; c=c**2 //= c//=2 -&gt; c=c//2]]></content>
       <categories>
         <category>Python基础教程</category>
       </categories>

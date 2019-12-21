@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2019-11-22T15:43:37.234Z</updated>
+  <updated>2019-12-21T15:41:19.462Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>if语句的嵌套</title>
+    <link href="https://blog.vseal.cn/posts/f2e4349a.html"/>
+    <id>https://blog.vseal.cn/posts/f2e4349a.html</id>
+    <published>2019-12-21T15:40:03.000Z</published>
+    <updated>2019-12-21T15:41:19.462Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;任务3-4-成绩分等&quot;&gt;&lt;a href=&quot;#任务3-4-成绩分等&quot; class=&quot;headerlink&quot; title=&quot;任务3-4 成绩分等&quot;&gt;&lt;/a&gt;任务3-4 成绩分等&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;键盘输入数据，然后用if-elif-else判断成绩是否有效。&lt;/li&gt;
+&lt;li&gt;示例程序：&lt;br&gt;关注微信公众号”hut-fsd“，回复37py3-4即可获取&lt;/li&gt;
+&lt;/ul&gt;&lt;hr&gt;&lt;ul&gt;
+&lt;li&gt;嵌套的基本格式：&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; 条件语句&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; 条件语句&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		执行语句&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		执行语句&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	执行语句&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;执行判断过程：&lt;/strong&gt;条件语句1 -&amp;gt;条件语句2 -&amp;gt;else 或 条件语句1 -&amp;gt; else:&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="if语句的嵌套" scheme="https://blog.vseal.cn/tags/if%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%B5%8C%E5%A5%97/"/>
+    
+  </entry>
   
   <entry>
     <title>if-elif-else判断语句</title>
@@ -366,7 +396,7 @@ print str.ljust(50);
     <link href="https://blog.vseal.cn/posts/d136ea2c.html"/>
     <id>https://blog.vseal.cn/posts/d136ea2c.html</id>
     <published>2019-11-09T15:29:18.000Z</published>
-    <updated>2019-11-09T15:39:08.719Z</updated>
+    <updated>2019-11-30T01:34:38.815Z</updated>
     
     <summary type="html">
     
@@ -695,31 +725,6 @@ print str.ljust(50);
       <category term="环境搭建" scheme="https://blog.vseal.cn/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
       <category term="git" scheme="https://blog.vseal.cn/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>centos安装伪分布式</title>
-    <link href="https://blog.vseal.cn/posts/8918ab64.html"/>
-    <id>https://blog.vseal.cn/posts/8918ab64.html</id>
-    <published>2019-03-02T07:26:00.000Z</published>
-    <updated>2019-03-02T07:55:20.104Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;教程环境和说明&quot;&gt;&lt;a href=&quot;#教程环境和说明&quot; class=&quot;headerlink&quot; title=&quot;教程环境和说明&quot;&gt;&lt;/a&gt;教程环境和说明&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;软硬件环境&lt;br&gt;CentOS 7.2 64 位&lt;br&gt;OpenJDK- 1.8&lt;br&gt;Hadoop- 3.0.2&lt;/li&gt;
-&lt;li&gt;关于本教程的说明&lt;br&gt;云实验室云主机自动使用 root 账户登录系统，因此本教程中所有的操作都是以 root 用户来执行的。若要在自己的云主机上进行本教程的实验，为了系统安全，建议新建一个账户登录后再进行后续操作。&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="centos系统应用" scheme="https://blog.vseal.cn/categories/centos%E7%B3%BB%E7%BB%9F%E5%BA%94%E7%94%A8/"/>
-    
-    
-      <category term="hadoop" scheme="https://blog.vseal.cn/tags/hadoop/"/>
-    
-      <category term="大数据" scheme="https://blog.vseal.cn/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
