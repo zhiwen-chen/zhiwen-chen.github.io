@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[switch语句的替换方案]]></title>
+    <url>%2Fposts%2Fb0905f23.html</url>
+    <content type="text"><![CDATA[任务3-5 判断三角形的类型 设计思路：键入3条边长，根据边长关系，首先确定是个三角形，再根据勾股定理各两边平方和与第三条边的平方和关系，确定直角三角形，再锐角三角形，else钝角三角形。 示例源码：关注公众号’blog_vseal_cn‘，回复37py3-5即可查看。 C语言或Java都支持switch语句，但是Python没有switch关键字，然后很多时候需要switch，那怎么办，推荐查看后面的字典章节，再完成下面任务。 任务3-6 简单的计算器任务描述：编写一个Python支持的算术运算符的简单计算器。用户输入格式为data1 op data2。其中data1 和 data2是参加运算的两个数；op为运算符，可以是+、-、*、/、%、//和^。]]></content>
+      <categories>
+        <category>Python基础教程</category>
+      </categories>
+      <tags>
+        <tag>Python选择结构</tag>
+        <tag>Python流程处理</tag>
+        <tag>switch语句的替换方案</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[if语句的嵌套]]></title>
     <url>%2Fposts%2Ff2e4349a.html</url>
     <content type="text"><![CDATA[任务3-4 成绩分等 设计思路：键盘输入数据，然后用if-elif-else判断成绩是否有效。 示例程序：关注微信公众号”hut-fsd“，回复37py3-4即可获取 嵌套的基本格式：1234567if 条件语句1: if 条件语句2: 执行语句 else: 执行语句else: 执行语句 执行判断过程：条件语句1 -&gt;条件语句2 -&gt;else 或 条件语句1 -&gt; else: 任务3-5 判断三角形的类型 任务描述：编写一个Python程序，用户输入三角形的三条边的边长，判断是否是三角形及三角形的类型：直角三角形、钝角三角形和锐角三角形。 设计思路：下期分享~]]></content>
