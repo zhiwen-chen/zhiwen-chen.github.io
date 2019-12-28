@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2019-12-26T15:52:11.429Z</updated>
+  <updated>2019-12-28T05:03:24.221Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>while循环</title>
+    <link href="https://blog.vseal.cn/posts/54c85bed.html"/>
+    <id>https://blog.vseal.cn/posts/54c85bed.html</id>
+    <published>2019-12-28T05:02:23.000Z</published>
+    <updated>2019-12-28T05:03:24.221Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务3-6-简单的计算器&quot;&gt;&lt;a href=&quot;#任务3-6-简单的计算器&quot; class=&quot;headerlink&quot; title=&quot;任务3-6 简单的计算器&quot;&gt;&lt;/a&gt;任务3-6 简单的计算器&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;根据题目要求，用一个字符串接收一个运算式(计算式)，需要用正则分解出两个操作数和一个运算符，再使用字典方式构造多分支结构，计算结果并输出。&lt;/li&gt;
+&lt;li&gt;示例程序&lt;br&gt;关注微信公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“回复37py3-6即可获取&lt;/li&gt;
+&lt;/ul&gt;&lt;hr&gt;&lt;h2 id=&quot;本篇正文&quot;&gt;&lt;a href=&quot;#本篇正文&quot; class=&quot;headerlink&quot; title=&quot;本篇正文&quot;&gt;&lt;/a&gt;本篇正文&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;循环语法：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[初始化语句]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;while (循环条件):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	语句块&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	[迭代语句]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果循环条件不成立，那么循环一次都不会执行&lt;/li&gt;
+&lt;li&gt;如果迭代语句使得循环条件一直满足，那么就会&lt;strong&gt;死循环&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;但是有时候需要循环条件一直为True，不如GUI程序界面控制等。&lt;/li&gt;
+&lt;li&gt;如果执行语句只有一条，那么可以跟着while冒号:后面&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="while循环" scheme="https://blog.vseal.cn/tags/while%E5%BE%AA%E7%8E%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>switch语句的替换方案</title>
@@ -707,28 +746,6 @@ print str.ljust(50);
       <category term="Python基础教程" scheme="https://blog.vseal.cn/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
       <category term="Ubuntu" scheme="https://blog.vseal.cn/tags/Ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows搭建Python3.7</title>
-    <link href="https://blog.vseal.cn/posts/a25ffe5b.html"/>
-    <id>https://blog.vseal.cn/posts/a25ffe5b.html</id>
-    <published>2019-10-31T00:43:00.000Z</published>
-    <updated>2019-11-01T15:44:20.754Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;准备阶段&quot;&gt;&lt;a href=&quot;#准备阶段&quot; class=&quot;headerlink&quot; title=&quot;准备阶段&quot;&gt;&lt;/a&gt;准备阶段&lt;/h2&gt;&lt;p&gt;下载慢的话可以下载&lt;strong&gt;迅雷&lt;/strong&gt;哦！&lt;br&gt;下载链接：&lt;a href=&quot;https://www.lanzous.com/i36jzha&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.lanzous.com/i36jzha&lt;/a&gt;&lt;/p&gt;&lt;h4 id=&quot;下载安装VCC运行库&quot;&gt;&lt;a href=&quot;#下载安装VCC运行库&quot; class=&quot;headerlink&quot; title=&quot;下载安装VCC运行库&quot;&gt;&lt;/a&gt;下载安装VCC运行库&lt;/h4&gt;&lt;p&gt;下载地址：&lt;a href=&quot;https://www.lanzous.com/i0w7h9a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.lanzous.com/i0w7h9a&lt;/a&gt;&lt;br&gt;下载后，打开自动会安装完成的。&lt;/p&gt;&lt;h4 id=&quot;下载Python【3-7-2-32位】&quot;&gt;&lt;a href=&quot;#下载Python【3-7-2-32位】&quot; class=&quot;headerlink&quot; title=&quot;下载Python【3.7.2 32位】&quot;&gt;&lt;/a&gt;下载Python【3.7.2 32位】&lt;/h4&gt;&lt;p&gt;下载地址：&lt;a href=&quot;https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="windows" scheme="https://blog.vseal.cn/tags/windows/"/>
     
   </entry>
   

@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[while循环]]></title>
+    <url>%2Fposts%2F54c85bed.html</url>
+    <content type="text"><![CDATA[上期回顾任务3-6 简单的计算器 设计思路：根据题目要求，用一个字符串接收一个运算式(计算式)，需要用正则分解出两个操作数和一个运算符，再使用字典方式构造多分支结构，计算结果并输出。 示例程序关注微信公众号”blog_vseal_cn“回复37py3-6即可获取 本篇正文 循环语法： 1234[初始化语句]while (循环条件): 语句块 [迭代语句] 注意： 如果循环条件不成立，那么循环一次都不会执行 如果迭代语句使得循环条件一直满足，那么就会死循环。 但是有时候需要循环条件一直为True，不如GUI程序界面控制等。 如果执行语句只有一条，那么可以跟着while冒号:后面 任务3-7 自然数求和任务描述：编写一个Python程序，计算1000以内所有偶数的和。 任务3-8 计算圆周率任务描述：编写一个Python程序，用如下公式计算圆周率，要求前后两次的计算精度小于0.0000000001。 $$\frac{\pi}{2}=\prod_{n=1}^{\infty}[\frac{(2n)^{2}}{(2n-1)(2n+1)}]$$ 任务3-9 系列数据的统计任务描述：编写一个Python程序，用户输入一系列正数，输入-1结束，统计所有数据的个数、最大值、最小值和平均值。 以上任务下回分享~]]></content>
+      <categories>
+        <category>Python基础教程</category>
+      </categories>
+      <tags>
+        <tag>Python流程处理</tag>
+        <tag>Python循环结构</tag>
+        <tag>while循环</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[switch语句的替换方案]]></title>
     <url>%2Fposts%2Fb0905f23.html</url>
     <content type="text"><![CDATA[任务3-5 判断三角形的类型 设计思路：键入3条边长，根据边长关系，首先确定是个三角形，再根据勾股定理各两边平方和与第三条边的平方和关系，确定直角三角形，再锐角三角形，else钝角三角形。 示例源码：关注公众号’blog_vseal_cn‘，回复37py3-5即可查看。 C语言或Java都支持switch语句，但是Python没有switch关键字，然后很多时候需要switch，那怎么办，推荐查看后面的字典章节，再完成下面任务。 任务3-6 简单的计算器任务描述：编写一个Python支持的算术运算符的简单计算器。用户输入格式为data1 op data2。其中data1 和 data2是参加运算的两个数；op为运算符，可以是+、-、*、/、%、//和^。]]></content>
