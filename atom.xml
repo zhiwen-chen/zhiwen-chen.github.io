@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2019-12-28T05:03:24.221Z</updated>
+  <updated>2019-12-30T15:33:31.228Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>for循环语句</title>
+    <link href="https://blog.vseal.cn/posts/7fad9216.html"/>
+    <id>https://blog.vseal.cn/posts/7fad9216.html</id>
+    <published>2019-12-30T15:32:50.000Z</published>
+    <updated>2019-12-30T15:33:31.228Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务3-7-自然数求和&quot;&gt;&lt;a href=&quot;#任务3-7-自然数求和&quot; class=&quot;headerlink&quot; title=&quot;任务3-7 自然数求和&quot;&gt;&lt;/a&gt;任务3-7 自然数求和&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;一个变量存储循环控制变量，另外一个存储和的累加器；循环变量用i表示，则循环的3个要素：i=2;i&amp;lt;1000;i+=2，生成1000内的所有的偶数。每执行一次，生成一个新的偶数。累加器s须初始化为0.循环体是一条累加语句s+=i。&lt;/li&gt;
+&lt;li&gt;示例程序：&lt;br&gt;关注微信公众号”blog_vseal_cn”回复37py3-7即可查看&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="for循环语句" scheme="https://blog.vseal.cn/tags/for%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>while循环</title>
@@ -724,28 +751,6 @@ print str.ljust(50);
       <category term="Mac" scheme="https://blog.vseal.cn/tags/Mac/"/>
     
       <category term="Python基础教程" scheme="https://blog.vseal.cn/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu安装Python3.7</title>
-    <link href="https://blog.vseal.cn/posts/4f6f42cc.html"/>
-    <id>https://blog.vseal.cn/posts/4f6f42cc.html</id>
-    <published>2019-10-31T09:19:00.000Z</published>
-    <updated>2019-11-01T15:44:14.502Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;以下演示内容是在Ubuntu 18.04系统中安装Python 3.7版本的方法，其余Linux发行版，请自行琢磨。&lt;br&gt;以下内容，同样可以在我的博客看到：&lt;a href=&quot;https://blog.vseal.cn&quot;&gt;https://blog.vseal.cn&lt;/a&gt; ,觉得敲命令行不爽的，可以打开我的博客哦！&lt;/p&gt;&lt;h2 id=&quot;换源&quot;&gt;&lt;a href=&quot;#换源&quot; class=&quot;headerlink&quot; title=&quot;换源&quot;&gt;&lt;/a&gt;换源&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://image1.vseal.cn/2019-10-30_5db9928fe7539.jpg&quot; alt=&quot;搜索升级软件&quot; title=&quot;搜索升级软件&quot;&gt;&lt;br&gt;搜索栏搜索 Software&amp;amp;Update&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://image1.vseal.cn/2019-10-30_5db992bd27a39.jpg&quot; alt&gt;&lt;br&gt;双击Software&amp;amp;Update打开界面&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="Ubuntu" scheme="https://blog.vseal.cn/tags/Ubuntu/"/>
     
   </entry>
   
