@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2019-12-30T15:33:31.228Z</updated>
+  <updated>2020-01-01T14:44:44.901Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>break和continue</title>
+    <link href="https://blog.vseal.cn/posts/1bc7f3c9.html"/>
+    <id>https://blog.vseal.cn/posts/1bc7f3c9.html</id>
+    <published>2020-01-01T14:42:02.000Z</published>
+    <updated>2020-01-01T14:44:44.901Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务3-11-计算分数之和&quot;&gt;&lt;a href=&quot;#任务3-11-计算分数之和&quot; class=&quot;headerlink&quot; title=&quot;任务3-11 计算分数之和&quot;&gt;&lt;/a&gt;任务3-11 计算分数之和&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;根据之前公式可知，这是一个分数的连续相加问题，且每项的分母是一个奇数。首先，需要生成一个1~2Xn+1的奇数序列；然后，利用for循环，依次把从序列中获得的数值进行累加运算。另外，为累加器变量的初值赋0。&lt;/li&gt;
+&lt;li&gt;示例程序：&lt;br&gt;关注公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“回复&lt;strong&gt;37py3-11&lt;/strong&gt;即可获取~&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="break和continue" scheme="https://blog.vseal.cn/tags/break%E5%92%8Ccontinue/"/>
+    
+  </entry>
   
   <entry>
     <title>for循环语句</title>
@@ -718,39 +745,6 @@ print str.ljust(50);
       <category term="Python基本数据类型" scheme="https://blog.vseal.cn/tags/Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
     
       <category term="字符串" scheme="https://blog.vseal.cn/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac安装Python3.7</title>
-    <link href="https://blog.vseal.cn/posts/19517df6.html"/>
-    <id>https://blog.vseal.cn/posts/19517df6.html</id>
-    <published>2019-11-01T15:39:00.000Z</published>
-    <updated>2019-11-01T15:44:04.319Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;以下内容为苹果系统虚拟机上演示的，本人没有苹果电脑（悲伤 ing.img），如果与实际上机有区别，欢迎讨论分享。&lt;/p&gt;&lt;h2 id=&quot;下载-Python3-7-安装包&quot;&gt;&lt;a href=&quot;#下载-Python3-7-安装包&quot; class=&quot;headerlink&quot; title=&quot;下载 Python3.7 安装包&quot;&gt;&lt;/a&gt;下载 Python3.7 安装包&lt;/h2&gt;&lt;h5 id=&quot;官网下载&quot;&gt;&lt;a href=&quot;#官网下载&quot; class=&quot;headerlink&quot; title=&quot;官网下载&quot;&gt;&lt;/a&gt;官网下载&lt;/h5&gt;&lt;p&gt;地址: &lt;a href=&quot;https://www.pyton.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.pyton.org&lt;/a&gt;&lt;br&gt;优点：选择版本多，毕竟是官网&lt;br&gt;缺点下载真的慢、有时候根本进不去~，如下图&lt;br&gt;&lt;img src=&quot;http://image1.vseal.cn/2019-11-01_5dbc4e1644906.png&quot; alt&gt;&lt;/p&gt;&lt;p&gt;下载操作步骤如下：&lt;/p&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;输入网址&lt;a href=&quot;https://www.python.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.python.org&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://image1.vseal.cn/2019-11-01_5dbc4e6a3da88.png&quot; alt&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;滚动鼠标滚轮，使页面到达最底端，并点击 Mac OS X&lt;br&gt;&lt;img src=&quot;http://image1.vseal.cn/2019-11-01_5dbc4e7d36d03.png&quot; alt&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;选择合适版本下载，不知道区别的直接点击图中 Python 3.7.5 -Oct. 15,2019&lt;br&gt;&lt;img src=&quot;http://image1.vseal.cn/2019-11-01_5dbc4e8b5a9b4.png&quot; alt&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;不同安装包版本要求&lt;br&gt;&lt;img src=&quot;http://image1.vseal.cn/2019-11-01_5dbc4ea73689d.png&quot; alt&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;下载完成&lt;br&gt;&lt;img src=&quot;http://image1.vseal.cn/2019-11-01_5dbc4eada2708.png&quot; alt&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Mac" scheme="https://blog.vseal.cn/tags/Mac/"/>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/tags/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
