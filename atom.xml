@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2020-01-01T14:44:44.901Z</updated>
+  <updated>2020-01-02T00:22:05.054Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>循环中的else语句</title>
+    <link href="https://blog.vseal.cn/posts/48480d59.html"/>
+    <id>https://blog.vseal.cn/posts/48480d59.html</id>
+    <published>2020-01-02T00:21:05.000Z</published>
+    <updated>2020-01-02T00:22:05.054Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务3-12-素数判断&quot;&gt;&lt;a href=&quot;#任务3-12-素数判断&quot; class=&quot;headerlink&quot; title=&quot;任务3-12 素数判断&quot;&gt;&lt;/a&gt;任务3-12 素数判断&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;根据素数的判断规则可知，对于一个整数num，如果num与2~nnum-1的任何数都没有整除关系，则num就是一个素数。因此，需要生成一个2~num-1的序列，然后利用for循环，依次把从序列中获得的数值与num通过取余运算来进行整除关系的判断。另外，需要设计一个标记变量flag来指示是否出现过整除的情况。&lt;/li&gt;
+&lt;li&gt;示例源码：&lt;br&gt;关注微信公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“，回复&lt;strong&gt;37py3-12&lt;/strong&gt;即可获取。&lt;h5 id=&quot;任务3-13-用户登录模拟&quot;&gt;&lt;a href=&quot;#任务3-13-用户登录模拟&quot; class=&quot;headerlink&quot; title=&quot;任务3-13 用户登录模拟&quot;&gt;&lt;/a&gt;任务3-13 用户登录模拟&lt;/h5&gt;&lt;/li&gt;
+&lt;li&gt;设计思路：&lt;br&gt;首先使用变量预先存放用户名和密码，然后设计最多执行3次的循环结构。在循环体中要求用户输入用户名密码，并判断输入是否正确。如果输入3次都不正确，打印提示信息，不允许再次登陆。&lt;/li&gt;
+&lt;li&gt;示例源码：&lt;br&gt;关注微信公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“，回复&lt;strong&gt;37py3-13&lt;/strong&gt;即可获取。&lt;h5 id=&quot;任务3-14-数值计算&quot;&gt;&lt;a href=&quot;#任务3-14-数值计算&quot; class=&quot;headerlink&quot; title=&quot;任务3-14 数值计算&quot;&gt;&lt;/a&gt;任务3-14 数值计算&lt;/h5&gt;&lt;/li&gt;
+&lt;li&gt;设计思路：&lt;br&gt;构造一个100~300的序列，用for循环逐一检测，并输出符合条件的数据。在此使用continue语句。&lt;/li&gt;
+&lt;li&gt;示例源码：&lt;br&gt;关注微信公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“，回复&lt;strong&gt;37py3-14&lt;/strong&gt;即可获取。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="循环中的else语句" scheme="https://blog.vseal.cn/tags/%E5%BE%AA%E7%8E%AF%E4%B8%AD%E7%9A%84else%E8%AF%AD%E5%8F%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>break和continue</title>
@@ -708,33 +739,6 @@ print str.ljust(50);
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;常见转义字符&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python基本数据类型" scheme="https://blog.vseal.cn/tags/Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    
-      <category term="字符串" scheme="https://blog.vseal.cn/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python基本数据类型之数值</title>
-    <link href="https://blog.vseal.cn/posts/322bc548.html"/>
-    <id>https://blog.vseal.cn/posts/322bc548.html</id>
-    <published>2019-11-02T15:41:00.000Z</published>
-    <updated>2019-11-03T13:36:05.628Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Python 支持数据自定义根据变化数据类型，但是更改类型其存储空间会重新分配。&lt;/p&gt;&lt;ul&gt;
-&lt;li&gt;整型（int）Python3 整型可以做 long 类型使用。 1. 二进制：以 0b 开头。例如，0b11011 表示十进制的 27。 1. 八进制：以 0o 开头。例如，0o33 表示十进制的 27。 1. 十进制：正常显示。 1. 十六进制：以 0x 开头。例如，0x1b 表示十进制的 27。&lt;/li&gt;
-&lt;li&gt;浮点型（float）&lt;br&gt;例如 2.7 或 2.7e2=2.7*100&lt;/li&gt;
-&lt;li&gt;布尔型（bool）&lt;br&gt;0 为 Flase,其他常数为 True&lt;/li&gt;
-&lt;li&gt;复数（complex）&lt;br&gt;复数由实数部分和虚数部分组成，可以用 a+bj 表示，也可以使用 complex(a,b);实数与虚数部分都为浮点。&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>

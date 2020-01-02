@@ -66,20 +66,20 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
   };
 </script>
 
-  <meta name="description" content="上节内容任务2-5 闰年判断设计思路：参考之前学的逻辑判断表达式，结合闰年判断规则，年数能整除4且不被100整除，能整除400。示例源码：关注微信公众号‘湖工大风沙渡’回复37py2-5即可查看。本节内容 Python的赋值运算符    运算符 实例说明     = c=5+2 -&amp;gt; c= 7   += c+=2 -&amp;gt; c=c+2   -= c-=2 -&amp;gt; c=c-2   *=">
-<meta name="keywords" content="Python赋值运算符,赋值运算符">
+  <meta name="description" content="上期回顾任务3-12 素数判断 设计思路：根据素数的判断规则可知，对于一个整数num，如果num与2~nnum-1的任何数都没有整除关系，则num就是一个素数。因此，需要生成一个2~num-1的序列，然后利用for循环，依次把从序列中获得的数值与num通过取余运算来进行整除关系的判断。另外，需要设计一个标记变量flag来指示是否出现过整除的情况。 示例源码：关注微信公众号”blog_vseal_c">
+<meta name="keywords" content="Python流程处理,Python循环结构,循环中的else语句">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python赋值运算符">
-<meta property="og:url" content="https://blog.vseal.cn/posts/d136ea2c.html">
+<meta property="og:title" content="循环中的else语句">
+<meta property="og:url" content="https://blog.vseal.cn/posts/48480d59.html">
 <meta property="og:site_name" content="紫印罗兰的博客">
-<meta property="og:description" content="上节内容任务2-5 闰年判断设计思路：参考之前学的逻辑判断表达式，结合闰年判断规则，年数能整除4且不被100整除，能整除400。示例源码：关注微信公众号‘湖工大风沙渡’回复37py2-5即可查看。本节内容 Python的赋值运算符    运算符 实例说明     = c=5+2 -&amp;gt; c= 7   += c+=2 -&amp;gt; c=c+2   -= c-=2 -&amp;gt; c=c-2   *=">
+<meta property="og:description" content="上期回顾任务3-12 素数判断 设计思路：根据素数的判断规则可知，对于一个整数num，如果num与2~nnum-1的任何数都没有整除关系，则num就是一个素数。因此，需要生成一个2~num-1的序列，然后利用for循环，依次把从序列中获得的数值与num通过取余运算来进行整除关系的判断。另外，需要设计一个标记变量flag来指示是否出现过整除的情况。 示例源码：关注微信公众号”blog_vseal_c">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-30T01:34:38.815Z">
+<meta property="og:updated_time" content="2020-01-02T00:22:05.054Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python赋值运算符">
-<meta name="twitter:description" content="上节内容任务2-5 闰年判断设计思路：参考之前学的逻辑判断表达式，结合闰年判断规则，年数能整除4且不被100整除，能整除400。示例源码：关注微信公众号‘湖工大风沙渡’回复37py2-5即可查看。本节内容 Python的赋值运算符    运算符 实例说明     = c=5+2 -&amp;gt; c= 7   += c+=2 -&amp;gt; c=c+2   -= c-=2 -&amp;gt; c=c-2   *=">
+<meta name="twitter:title" content="循环中的else语句">
+<meta name="twitter:description" content="上期回顾任务3-12 素数判断 设计思路：根据素数的判断规则可知，对于一个整数num，如果num与2~nnum-1的任何数都没有整除关系，则num就是一个素数。因此，需要生成一个2~num-1的序列，然后利用for循环，依次把从序列中获得的数值与num通过取余运算来进行整除关系的判断。另外，需要设计一个标记变量flag来指示是否出现过整除的情况。 示例源码：关注微信公众号”blog_vseal_c">
 
-<link rel="canonical" href="https://blog.vseal.cn/posts/d136ea2c.html">
+<link rel="canonical" href="https://blog.vseal.cn/posts/48480d59.html">
 
 
 <script id="page-configurations">
@@ -93,7 +93,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
   };
 </script>
 
-  <title>Python赋值运算符 | 紫印罗兰的博客</title>
+  <title>循环中的else语句 | 紫印罗兰的博客</title>
   
 
 
@@ -238,7 +238,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/d136ea2c.html">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/48480d59.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -251,7 +251,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Python赋值运算符
+          循环中的else语句
         </h1>
 
         <div class="post-meta">
@@ -260,16 +260,10 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-11-09 23:29:18" itemprop="dateCreated datePublished" datetime="2019-11-09T23:29:18+08:00">2019-11-09</time>
+              <time title="创建时间：2020-01-02 08:21:05 / 修改时间：08:22:05" itemprop="dateCreated datePublished" datetime="2020-01-02T08:21:05+08:00">2020-01-02</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-30 09:34:38" itemprop="dateModified" datetime="2019-11-30T09:34:38+08:00">2019-11-30</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -293,50 +287,46 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="上节内容"><a href="#上节内容" class="headerlink" title="上节内容"></a>上节内容</h2><h6 id="任务2-5-闰年判断"><a href="#任务2-5-闰年判断" class="headerlink" title="任务2-5 闰年判断"></a>任务2-5 闰年判断</h6><p>设计思路：参考之前学的逻辑判断表达式，结合闰年判断规则，年数能整除4且不被100整除，能整除400。</p><p>示例源码：关注微信公众号‘湖工大风沙渡’回复<strong>37py2-5</strong>即可查看。</p><hr><h2 id="本节内容"><a href="#本节内容" class="headerlink" title="本节内容"></a>本节内容</h2><ul>
-<li>Python的赋值运算符</li>
-</ul><table>
-<thead>
-<tr>
-<th style="text-align:left">运算符</th>
-<th style="text-align:left">实例说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">=</td>
-<td style="text-align:left">c=5+2 -&gt; c= 7</td>
-</tr>
-<tr>
-<td style="text-align:left">+=</td>
-<td style="text-align:left">c+=2 -&gt; c=c+2</td>
-</tr>
-<tr>
-<td style="text-align:left">-=</td>
-<td style="text-align:left">c-=2 -&gt; c=c-2</td>
-</tr>
-<tr>
-<td style="text-align:left">*=</td>
-<td style="text-align:left">c*=2 -&gt; c=c*2</td>
-</tr>
-<tr>
-<td style="text-align:left">/=</td>
-<td style="text-align:left">c/=2 -&gt; c=c/2</td>
-</tr>
-<tr>
-<td style="text-align:left">%=</td>
-<td style="text-align:left">c%=2 -&gt; c=c%2</td>
-</tr>
-<tr>
-<td style="text-align:left">**=</td>
-<td style="text-align:left">c**=2 -&gt; c=c**2</td>
-</tr>
-<tr>
-<td style="text-align:left">//=</td>
-<td style="text-align:left">c//=2 -&gt; c=c//2</td>
-</tr>
-</tbody>
-</table>
+        <h2 id="上期回顾"><a href="#上期回顾" class="headerlink" title="上期回顾"></a>上期回顾</h2><h5 id="任务3-12-素数判断"><a href="#任务3-12-素数判断" class="headerlink" title="任务3-12 素数判断"></a>任务3-12 素数判断</h5><ul>
+<li>设计思路：<br>根据素数的判断规则可知，对于一个整数num，如果num与2~nnum-1的任何数都没有整除关系，则num就是一个素数。因此，需要生成一个2~num-1的序列，然后利用for循环，依次把从序列中获得的数值与num通过取余运算来进行整除关系的判断。另外，需要设计一个标记变量flag来指示是否出现过整除的情况。</li>
+<li>示例源码：<br>关注微信公众号”<strong>blog_vseal_cn</strong>“，回复<strong>37py3-12</strong>即可获取。<h5 id="任务3-13-用户登录模拟"><a href="#任务3-13-用户登录模拟" class="headerlink" title="任务3-13 用户登录模拟"></a>任务3-13 用户登录模拟</h5></li>
+<li>设计思路：<br>首先使用变量预先存放用户名和密码，然后设计最多执行3次的循环结构。在循环体中要求用户输入用户名密码，并判断输入是否正确。如果输入3次都不正确，打印提示信息，不允许再次登陆。</li>
+<li>示例源码：<br>关注微信公众号”<strong>blog_vseal_cn</strong>“，回复<strong>37py3-13</strong>即可获取。<h5 id="任务3-14-数值计算"><a href="#任务3-14-数值计算" class="headerlink" title="任务3-14 数值计算"></a>任务3-14 数值计算</h5></li>
+<li>设计思路：<br>构造一个100~300的序列，用for循环逐一检测，并输出符合条件的数据。在此使用continue语句。</li>
+<li>示例源码：<br>关注微信公众号”<strong>blog_vseal_cn</strong>“，回复<strong>37py3-14</strong>即可获取。</li>
+</ul><a id="more"></a>
+<hr>
+<h2 id="本篇回顾"><a href="#本篇回顾" class="headerlink" title="本篇回顾"></a>本篇回顾</h2><ul>
+<li><p><strong>while循环中使用else</strong></p>
+<ol>
+<li><p>语法格式：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[初始化语句]</span><br><span class="line"><span class="keyword">while</span> (循环变量):</span><br><span class="line">	语句块</span><br><span class="line">	[迭代语句]</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	语句块</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行else语句块条件：当循环变量不满足时！</p>
+</li>
+</ol>
+</li>
+<li><p><strong>for循环语法</strong></p>
+<ol>
+<li><p>语法格式：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> &lt;变量&gt; <span class="keyword">in</span> &lt;序列&gt;:</span><br><span class="line">	循环体语句块</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	语句块</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行else语句条件：for循环完成所有扫描！</p>
+</li>
+</ol>
+</li>
+<li><p><strong>注意：</strong></p>
+<ol>
+<li>循环中，else执行不包括break退出状况。</li>
+<li>for-else或while-else搭配break使用才能体现其强大之处</li>
+<li>使用else减少循环之后的判断结构，程序结构简化很多</li>
+</ol>
+</li>
+</ul>
+<h5 id="任务3-15-输出素数"><a href="#任务3-15-输出素数" class="headerlink" title="任务3-15 输出素数"></a>任务3-15 输出素数</h5><ul>
+<li>任务描述：<br>输出100~200之间的所有素数</li>
+</ul>
+
     </div>
 
     
@@ -365,25 +355,23 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Python赋值运算符/" rel="tag"># Python赋值运算符</a>
-              <a href="/tags/赋值运算符/" rel="tag"># 赋值运算符</a>
+              <a href="/tags/Python流程处理/" rel="tag"># Python流程处理</a>
+              <a href="/tags/Python循环结构/" rel="tag"># Python循环结构</a>
+              <a href="/tags/循环中的else语句/" rel="tag"># 循环中的else语句</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/posts/9696725b.html" rel="next" title="Python关系运算符和逻辑运算符">
-                  <i class="fa fa-chevron-left"></i> Python关系运算符和逻辑运算符
+                <a href="/posts/1bc7f3c9.html" rel="next" title="break和continue">
+                  <i class="fa fa-chevron-left"></i> break和continue
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/posts/8667cafb.html" rel="prev" title="Python位运算符">
-                  Python位运算符 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
       </footer>
@@ -427,7 +415,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#上节内容"><span class="nav-number">1.</span> <span class="nav-text">上节内容</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#任务2-5-闰年判断"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">任务2-5 闰年判断</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本节内容"><span class="nav-number">2.</span> <span class="nav-text">本节内容</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#上期回顾"><span class="nav-number">1.</span> <span class="nav-text">上期回顾</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#任务3-12-素数判断"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">任务3-12 素数判断</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#任务3-13-用户登录模拟"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">任务3-13 用户登录模拟</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#任务3-14-数值计算"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">任务3-14 数值计算</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本篇回顾"><span class="nav-number">2.</span> <span class="nav-text">本篇回顾</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#任务3-15-输出素数"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">任务3-15 输出素数</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
