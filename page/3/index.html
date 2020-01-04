@@ -237,6 +237,98 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/2f83f695.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing means Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2f83f695.html" class="post-title-link" itemprop="url">Python基本数据类型之字符串</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-03 21:34:00 / 修改时间：21:35:43" itemprop="dateCreated datePublished" datetime="2019-11-03T21:34:00+08:00">2019-11-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>常用” “或’ ‘或’’’ ‘’’括起来，同时使用反斜杠\转义特殊字符的一段文字。</p><ul>
+<li><h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><ol>
+<li>字符串前加r，反斜杠不转义；如<code>r&#39;\t\n\u&#39;</code></li>
+<li>连接字符串，str1 + str2。字符串重复 str1 * num 。</li>
+<li>续行符：\（后面不能有任何内容）；”””…”””或’’’…’’’续多行（没用过）</li>
+<li>字符串索引方式：从左为<strong>0</strong>开始，从右边为<strong>-1</strong>开始到<strong>-n</strong></li>
+<li>字符串切片：[头下标:尾下标:步数]，[开始，结束)，<strong>前闭后开</strong>，步数不输入时，默认为1；例如<code>str =&quot;abcdefg&quot;</code> ，可以切除<strong>“abc”</strong>使用<code>str[0:3]</code>、<code>str[0:3:1]</code>，切出<strong>“cba”</strong>使用<code>str[-5:-8]</code>，切除<strong>“aceg”</strong>使用<code>str[0:7:2]</code>、<code>str[0::2]</code>。</li>
+<li>字符串不能被改变：如word[0] = ‘m’<strong>会报错</strong>。</li>
+<li>find()函数：找子字符串，如str.find(sub_str)，找到为子字符串最左侧开始位置，找不到返回<strong>-1</strong></li>
+<li>lower()全小写化，str.lower();upper()全大写,str.upper()。</li>
+<li>replace()，替换字符，如str.replace(old,new)。</li>
+</ol>
+</li>
+<li><p>常见转义字符</p>
+</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/2f83f695.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/322bc548.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -987,92 +1079,6 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/2e046981.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="紫印罗兰">
-      <meta itemprop="description" content="分享即是快乐</br>Sharing means Happiness">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="紫印罗兰的博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/2e046981.html" class="post-title-link" itemprop="url">搭建Python环境</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2018-08-20 12:18:00" itemprop="dateCreated datePublished" datetime="2018-08-20T12:18:00+08:00">2018-08-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-03-02 18:22:06" itemprop="dateModified" datetime="2019-03-02T18:22:06+08:00">2019-03-02</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/centos/" itemprop="url" rel="index">
-                    <span itemprop="name">centos</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><p>Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。首先我们来看看系统中是否已经存在 Python ，并安装一些开发工具包:</p><ul>
-<li>安装前准备<br>查看当前系统中的 Python 版本，可以看到实验室的这台服务器已经安装了 Python 2.6.6<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python --version</span><br></pre></td></tr></table></figure>
-</li>
-</ul><p>检查 CentOS 版本，我们可以看到这台服务器的 CentOS的版本是 CentOS release 6.8<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/redhat-release</span><br></pre></td></tr></table></figure></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/2e046981.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1123,7 +1129,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-count">34</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1136,7 +1142,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">58</span>
+        <span class="site-state-item-count">59</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

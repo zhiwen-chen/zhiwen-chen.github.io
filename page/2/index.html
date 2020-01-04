@@ -237,6 +237,152 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/98dbd912.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="紫印罗兰">
+      <meta itemprop="description" content="分享即是快乐</br>Sharing means Happiness">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="紫印罗兰的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/98dbd912.html" class="post-title-link" itemprop="url">Python-math模块</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-17 18:20:31 / 修改时间：18:31:48" itemprop="dateCreated datePublished" datetime="2019-11-17T18:20:31+08:00">2019-11-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
+                    <span itemprop="name">Python基础教程</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="本篇正文"><a href="#本篇正文" class="headerlink" title="本篇正文"></a>本篇正文</h2><ul>
+<li><p>引入math模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import math</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>常用数学函数</p>
+</li>
+</ul><ol>
+<li><p>ceil:取大于等于x的最小的整数值，如果x是一个整数，则返回x</p>
+</li>
+<li><p>copysign:把y的正负号加到x前面，可以使用0</p>
+</li>
+<li><p>cos:求x的余弦，x必须是弧度</p>
+</li>
+<li><p>degrees:把x从弧度转换成角度</p>
+</li>
+<li><p>e:表示一个常量</p>
+</li>
+<li><p>exp:返回math.e,也就是2.71828的x次方</p>
+</li>
+<li><p>expm1:返回math.e的x(其值为2.71828)次方的值减１</p>
+</li>
+<li><p>fabs:返回x的绝对值</p>
+</li>
+<li><p>factorial:取x的阶乘的值</p>
+</li>
+<li><p>floor:取小于等于x的最大的整数值，如果x是一个整数，则返回自身</p>
+</li>
+<li><p>fmod:得到x/y的余数，其值是一个浮点数</p>
+</li>
+<li><p>frexp:返回一个元组(m,e),其计算方式为：x分别除0.5和1,得到一个值的范围</p>
+</li>
+<li><p>fsum:对迭代器里的每个元素进行求和操作</p>
+</li>
+<li><p>gcd:返回x和y的最大公约数</p>
+</li>
+<li><p>hypot:如果x是不是无穷大的数字,则返回True,否则返回False</p>
+</li>
+<li><p>isfinite:如果x是正无穷大或负无穷大，则返回True,否则返回False</p>
+</li>
+<li><p>isinf:如果x是正无穷大或负无穷大，则返回True,否则返回False</p>
+</li>
+<li><p>isnan:如果x不是数字True,否则返回False</p>
+</li>
+<li><p>ldexp:返回x*(2**i)的值</p>
+</li>
+<li><p>log:返回x的自然对数，默认以e为基数，base参数给定时，将x的对数返回给定的base,计算式为：log(x)/log(base)</p>
+</li>
+<li><p>log10:返回x的以10为底的对数</p>
+</li>
+<li><p>log1p:返回x+1的自然对数(基数为e)的值</p>
+</li>
+<li><p>log2:返回x的基2对数</p>
+</li>
+<li><p>modf:返回由x的小数部分和整数部分组成的元组</p>
+</li>
+<li><p>pi:数字常量，圆周率</p>
+</li>
+<li><p>pow:返回x的y次方，即x**y</p>
+</li>
+<li><p>radians:把角度x转换成弧度</p>
+</li>
+<li><p>sin:求x(x为弧度)的正弦值</p>
+</li>
+<li><p>sqrt:求x的平方根</p>
+</li>
+<li><p>tan:返回x(x为弧度)的正切值</p>
+</li>
+<li><p>trunc:返回x的整数部分</p>
+</li>
+</ol>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/98dbd912.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/bebfcfa4.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1106,98 +1252,6 @@ print str.ljust(50);
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/2f83f695.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="紫印罗兰">
-      <meta itemprop="description" content="分享即是快乐</br>Sharing means Happiness">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="紫印罗兰的博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/2f83f695.html" class="post-title-link" itemprop="url">Python基本数据类型之字符串</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-11-03 21:34:00 / 修改时间：21:35:43" itemprop="dateCreated datePublished" datetime="2019-11-03T21:34:00+08:00">2019-11-03</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python基础教程/" itemprop="url" rel="index">
-                    <span itemprop="name">Python基础教程</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>常用” “或’ ‘或’’’ ‘’’括起来，同时使用反斜杠\转义特殊字符的一段文字。</p><ul>
-<li><h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><ol>
-<li>字符串前加r，反斜杠不转义；如<code>r&#39;\t\n\u&#39;</code></li>
-<li>连接字符串，str1 + str2。字符串重复 str1 * num 。</li>
-<li>续行符：\（后面不能有任何内容）；”””…”””或’’’…’’’续多行（没用过）</li>
-<li>字符串索引方式：从左为<strong>0</strong>开始，从右边为<strong>-1</strong>开始到<strong>-n</strong></li>
-<li>字符串切片：[头下标:尾下标:步数]，[开始，结束)，<strong>前闭后开</strong>，步数不输入时，默认为1；例如<code>str =&quot;abcdefg&quot;</code> ，可以切除<strong>“abc”</strong>使用<code>str[0:3]</code>、<code>str[0:3:1]</code>，切出<strong>“cba”</strong>使用<code>str[-5:-8]</code>，切除<strong>“aceg”</strong>使用<code>str[0:7:2]</code>、<code>str[0::2]</code>。</li>
-<li>字符串不能被改变：如word[0] = ‘m’<strong>会报错</strong>。</li>
-<li>find()函数：找子字符串，如str.find(sub_str)，找到为子字符串最左侧开始位置，找不到返回<strong>-1</strong></li>
-<li>lower()全小写化，str.lower();upper()全大写,str.upper()。</li>
-<li>replace()，替换字符，如str.replace(old,new)。</li>
-</ol>
-</li>
-<li><p>常见转义字符</p>
-</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/2f83f695.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1248,7 +1302,7 @@ print str.ljust(50);
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-count">34</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1261,7 +1315,7 @@ print str.ljust(50);
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">58</span>
+        <span class="site-state-item-count">59</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1383,6 +1437,54 @@ print str.ljust(50);
   
 
   
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
 
   
 

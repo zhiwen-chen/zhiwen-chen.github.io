@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2020-01-02T00:22:05.054Z</updated>
+  <updated>2020-01-04T05:25:31.810Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>嵌套</title>
+    <link href="https://blog.vseal.cn/posts/9ad1f975.html"/>
+    <id>https://blog.vseal.cn/posts/9ad1f975.html</id>
+    <published>2020-01-04T05:24:44.000Z</published>
+    <updated>2020-01-04T05:25:31.810Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务3-15-输出素数&quot;&gt;&lt;a href=&quot;#任务3-15-输出素数&quot; class=&quot;headerlink&quot; title=&quot;任务3-15 输出素数&quot;&gt;&lt;/a&gt;任务3-15 输出素数&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;素数的判断规则同任务3-12，不同的是在for循环中使用else语句，从而不需要标记变量。&lt;/li&gt;
+&lt;li&gt;示例程序&lt;br&gt;关注微信公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“，回复&lt;strong&gt;37py3-15&lt;/strong&gt;即可获取。&lt;/li&gt;
+&lt;/ul&gt;&lt;hr&gt;&lt;h2 id=&quot;本篇正文&quot;&gt;&lt;a href=&quot;#本篇正文&quot; class=&quot;headerlink&quot; title=&quot;本篇正文&quot;&gt;&lt;/a&gt;本篇正文&lt;/h2&gt;&lt;p&gt;循环结构的循环体内可以包含任意Python的语句，因此也可以包含另外的循环结构。其中，最外层的循环称为外循环，包含的循环称为内循环；内循环必须完全包含在外循环中。并且外循环和内循环的控制变量不能相同。在嵌套循环结构中，嵌套的层数可以是任意的。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="嵌套" scheme="https://blog.vseal.cn/tags/%E5%B5%8C%E5%A5%97/"/>
+    
+  </entry>
   
   <entry>
     <title>循环中的else语句</title>
@@ -712,43 +739,6 @@ print str.ljust(50);
       <category term="Python基本数据类型" scheme="https://blog.vseal.cn/tags/Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
     
       <category term="变量" scheme="https://blog.vseal.cn/tags/%E5%8F%98%E9%87%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python基本数据类型之字符串</title>
-    <link href="https://blog.vseal.cn/posts/2f83f695.html"/>
-    <id>https://blog.vseal.cn/posts/2f83f695.html</id>
-    <published>2019-11-03T13:34:00.000Z</published>
-    <updated>2019-11-03T13:35:43.254Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;常用” “或’ ‘或’’’ ‘’’括起来，同时使用反斜杠\转义特殊字符的一段文字。&lt;/p&gt;&lt;ul&gt;
-&lt;li&gt;&lt;h5 id=&quot;注意&quot;&gt;&lt;a href=&quot;#注意&quot; class=&quot;headerlink&quot; title=&quot;注意&quot;&gt;&lt;/a&gt;注意&lt;/h5&gt;&lt;ol&gt;
-&lt;li&gt;字符串前加r，反斜杠不转义；如&lt;code&gt;r&amp;#39;\t\n\u&amp;#39;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;连接字符串，str1 + str2。字符串重复 str1 * num 。&lt;/li&gt;
-&lt;li&gt;续行符：\（后面不能有任何内容）；”””…”””或’’’…’’’续多行（没用过）&lt;/li&gt;
-&lt;li&gt;字符串索引方式：从左为&lt;strong&gt;0&lt;/strong&gt;开始，从右边为&lt;strong&gt;-1&lt;/strong&gt;开始到&lt;strong&gt;-n&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;字符串切片：[头下标:尾下标:步数]，[开始，结束)，&lt;strong&gt;前闭后开&lt;/strong&gt;，步数不输入时，默认为1；例如&lt;code&gt;str =&amp;quot;abcdefg&amp;quot;&lt;/code&gt; ，可以切除&lt;strong&gt;“abc”&lt;/strong&gt;使用&lt;code&gt;str[0:3]&lt;/code&gt;、&lt;code&gt;str[0:3:1]&lt;/code&gt;，切出&lt;strong&gt;“cba”&lt;/strong&gt;使用&lt;code&gt;str[-5:-8]&lt;/code&gt;，切除&lt;strong&gt;“aceg”&lt;/strong&gt;使用&lt;code&gt;str[0:7:2]&lt;/code&gt;、&lt;code&gt;str[0::2]&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;字符串不能被改变：如word[0] = ‘m’&lt;strong&gt;会报错&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;find()函数：找子字符串，如str.find(sub_str)，找到为子字符串最左侧开始位置，找不到返回&lt;strong&gt;-1&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;lower()全小写化，str.lower();upper()全大写,str.upper()。&lt;/li&gt;
-&lt;li&gt;replace()，替换字符，如str.replace(old,new)。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;常见转义字符&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python基本数据类型" scheme="https://blog.vseal.cn/tags/Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    
-      <category term="字符串" scheme="https://blog.vseal.cn/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
   </entry>
   
