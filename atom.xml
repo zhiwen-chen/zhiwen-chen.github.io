@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2020-01-04T05:25:31.810Z</updated>
+  <updated>2020-01-05T15:14:41.763Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>字符串的遍历循环</title>
+    <link href="https://blog.vseal.cn/posts/90d64ac8.html"/>
+    <id>https://blog.vseal.cn/posts/90d64ac8.html</id>
+    <published>2020-01-05T15:10:37.000Z</published>
+    <updated>2020-01-05T15:14:41.763Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务3-16-输出九九乘法表&quot;&gt;&lt;a href=&quot;#任务3-16-输出九九乘法表&quot; class=&quot;headerlink&quot; title=&quot;任务3-16 输出九九乘法表&quot;&gt;&lt;/a&gt;任务3-16 输出九九乘法表&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;需要用双重循环结构来完成。其中，外层循环控制输出的行数，内层循环控制每行输出的列数。循环体内输出乘法表。&lt;/li&gt;
+&lt;li&gt;示例源码：&lt;br&gt;关注微信公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“，回复”&lt;strong&gt;37py3-16&lt;/strong&gt;“。&lt;h5 id=&quot;任务3-17-输出水仙花数&quot;&gt;&lt;a href=&quot;#任务3-17-输出水仙花数&quot; class=&quot;headerlink&quot; title=&quot;任务3-17 输出水仙花数&quot;&gt;&lt;/a&gt;任务3-17 输出水仙花数&lt;/h5&gt;&lt;/li&gt;
+&lt;li&gt;设计思路：&lt;br&gt;用一个三重循环来表示3位数。其中，外层循环表示百位，第二层循环表示十位，最内层循环表示各位。在循环体内把三层循环体结构所表示的数字组合成一个3位数，判断后输出结果。&lt;/li&gt;
+&lt;li&gt;示例源码：&lt;br&gt;关注微信公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“，回复”&lt;strong&gt;37py3-17&lt;/strong&gt;“。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="字符串的遍历循环" scheme="https://blog.vseal.cn/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E9%81%8D%E5%8E%86%E5%BE%AA%E7%8E%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>嵌套</title>
@@ -694,51 +723,6 @@ print str.ljust(50);
       <category term="Python算术运算符表达式" scheme="https://blog.vseal.cn/tags/Python%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
       <category term="算术运算符及其表达式" scheme="https://blog.vseal.cn/tags/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6%E5%8F%8A%E5%85%B6%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python基本数据类型之变量 </title>
-    <link href="https://blog.vseal.cn/posts/48bfbe8a.html"/>
-    <id>https://blog.vseal.cn/posts/48bfbe8a.html</id>
-    <published>2019-11-04T14:53:40.000Z</published>
-    <updated>2019-11-04T14:55:37.066Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;变量特点&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;变量不需要声明，但是&lt;strong&gt;必须赋值&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;变量命名：（下划线或字母）+（任意数目字母、数字或下划线）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;h5 id=&quot;注意&quot;&gt;&lt;a href=&quot;#注意&quot; class=&quot;headerlink&quot; title=&quot;注意&quot;&gt;&lt;/a&gt;注意&lt;/h5&gt;&lt;ol&gt;
-&lt;li&gt;变量不能以数字作为开头&lt;/li&gt;
-&lt;li&gt;系统关键字不能作为变量名使用，如if,while等&lt;/li&gt;
-&lt;li&gt;除了下划线其他字符不能使用&lt;/li&gt;
-&lt;li&gt;变量区分大小写&lt;/li&gt;
-&lt;li&gt;前后有下划线的变量名&lt;code&gt;_X_&lt;/code&gt;为系统变量&lt;/li&gt;
-&lt;li&gt;变量是根据赋值所更改类型&lt;/li&gt;
-&lt;li&gt;赋值方法&lt;ol&gt;
-&lt;li&gt;普通赋值：y=1&lt;/li&gt;
-&lt;li&gt;链式赋值：y=x=a=1&lt;/li&gt;
-&lt;li&gt;多元赋值：x,y = 1,2 x,y=y,x&lt;/li&gt;
-&lt;li&gt;增量赋值：x+=1&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python基本数据类型" scheme="https://blog.vseal.cn/tags/Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    
-      <category term="变量" scheme="https://blog.vseal.cn/tags/%E5%8F%98%E9%87%8F/"/>
     
   </entry>
   
