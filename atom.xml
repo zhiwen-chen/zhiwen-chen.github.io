@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2020-01-05T15:14:41.763Z</updated>
+  <updated>2020-01-06T04:54:44.751Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pass语句</title>
+    <link href="https://blog.vseal.cn/posts/a36bb514.html"/>
+    <id>https://blog.vseal.cn/posts/a36bb514.html</id>
+    <published>2020-01-06T04:54:06.000Z</published>
+    <updated>2020-01-06T04:54:44.751Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务3-18-创建扑克牌&quot;&gt;&lt;a href=&quot;#任务3-18-创建扑克牌&quot; class=&quot;headerlink&quot; title=&quot;任务3-18 创建扑克牌&quot;&gt;&lt;/a&gt;任务3-18 创建扑克牌&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;根据题意，需要使用2个字符串列表来分别存放13张牌和4个花色。因为每个花色都要配13张牌，因此需要设计一个二重循环结构来完成。外层循环控制4个花色，遍历列表中的每一个花色，直到4个花色全部访问到。内层循环控制13张牌。在外层循环的每一次迭代中，内层循环都要执行一遍。在循环体中输出所有的牌面。&lt;h5 id=&quot;任务3-19-字符串逆序输出&quot;&gt;&lt;a href=&quot;#任务3-19-字符串逆序输出&quot; class=&quot;headerlink&quot; title=&quot;任务3-19 字符串逆序输出&quot;&gt;&lt;/a&gt;任务3-19 字符串逆序输出&lt;/h5&gt;&lt;/li&gt;
+&lt;li&gt;设计思路：&lt;br&gt;需要使用循环结构来遍历每个字符。在遍历过程中，依次把每次遍历的字符插入结果字符串的前面，最后输出结果字符串。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="pass语句" scheme="https://blog.vseal.cn/tags/pass%E8%AF%AD%E5%8F%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>字符串的遍历循环</title>
@@ -699,30 +726,6 @@ print str.ljust(50);
       <category term="Python逻辑运算符" scheme="https://blog.vseal.cn/tags/Python%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     
       <category term="关系运算符和逻辑运算符" scheme="https://blog.vseal.cn/tags/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python算术运算符及其表达式</title>
-    <link href="https://blog.vseal.cn/posts/fa3ab1b6.html"/>
-    <id>https://blog.vseal.cn/posts/fa3ab1b6.html</id>
-    <published>2019-11-06T15:34:14.000Z</published>
-    <updated>2019-11-06T15:36:51.506Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h5 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h5&gt;&lt;h6 id=&quot;任务2-2-电子邮箱格式检测&quot;&gt;&lt;a href=&quot;#任务2-2-电子邮箱格式检测&quot; class=&quot;headerlink&quot; title=&quot;任务2-2 电子邮箱格式检测&quot;&gt;&lt;/a&gt;任务2-2 电子邮箱格式检测&lt;/h6&gt;&lt;p&gt;设计思路：用户从键盘输入邮箱，构造邮箱检测正则表达式，调用re.match()函数进行检测并且输出结果。&lt;br&gt;微信公众号”湖工大风沙渡”，回复”37py2-2”获取示例源码&lt;/p&gt;&lt;h6 id=&quot;任务2-3-电话号码检测&quot;&gt;&lt;a href=&quot;#任务2-3-电话号码检测&quot; class=&quot;headerlink&quot; title=&quot;任务2-3 电话号码检测&quot;&gt;&lt;/a&gt;任务2-3 电话号码检测&lt;/h6&gt;&lt;p&gt;设计思路：用户从键盘输入学生信息，先用正则表达式提取所有的数字，然后构造电话号码检测的正则表达式，调用match()函数进行检测并输出match().group()结果。&lt;br&gt;只考虑国内情况：固定电话区号是3或4位，以0开头；固定电话号码一般是7或8位数字；国内手机号码是11位数字，除了147号码段，其他的都只考虑前两位，例如1[35789]等。&lt;br&gt;微信公众号”湖工大风沙渡”，回复”37py2-3”获取示例源码&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python算术运算符" scheme="https://blog.vseal.cn/tags/Python%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-      <category term="Python算术运算符表达式" scheme="https://blog.vseal.cn/tags/Python%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-      <category term="算术运算符及其表达式" scheme="https://blog.vseal.cn/tags/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6%E5%8F%8A%E5%85%B6%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
   </entry>
   
