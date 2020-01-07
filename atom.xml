@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2020-01-06T04:54:44.751Z</updated>
+  <updated>2020-01-07T04:56:11.315Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>列表的创建</title>
+    <link href="https://blog.vseal.cn/posts/47808459.html"/>
+    <id>https://blog.vseal.cn/posts/47808459.html</id>
+    <published>2020-01-07T04:54:51.000Z</published>
+    <updated>2020-01-07T04:56:11.315Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;列表的特点：通过一个变量存储多个数据值，且数据类型可以不同。另外，列表可以修改，如添加或删除列表的元素。&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;列表的创建&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;列表举例：[5,10,4,5,2] [‘Monday’,’Month’,’Year’] [2014,’年]&lt;/li&gt;
+&lt;li&gt;空列表:[]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;遍历列表元素&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用in操作符遍历。&lt;/li&gt;
+&lt;li&gt;使用range()函数。&lt;/li&gt;
+&lt;li&gt;使用iter()函数，它是一个迭代器函数。&lt;/li&gt;
+&lt;li&gt;使用enumerate()函数遍历。该函数用于遍历序列中的元素及其下标。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="列表" scheme="https://blog.vseal.cn/tags/%E5%88%97%E8%A1%A8/"/>
+    
+      <category term="列表的创建" scheme="https://blog.vseal.cn/tags/%E5%88%97%E8%A1%A8%E7%9A%84%E5%88%9B%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>pass语句</title>
@@ -35,9 +72,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="pass语句" scheme="https://blog.vseal.cn/tags/pass%E8%AF%AD%E5%8F%A5/"/>
     
@@ -64,9 +101,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="字符串的遍历循环" scheme="https://blog.vseal.cn/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E9%81%8D%E5%8E%86%E5%BE%AA%E7%8E%AF/"/>
     
@@ -91,9 +128,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="嵌套" scheme="https://blog.vseal.cn/tags/%E5%B5%8C%E5%A5%97/"/>
     
@@ -122,9 +159,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="循环中的else语句" scheme="https://blog.vseal.cn/tags/%E5%BE%AA%E7%8E%AF%E4%B8%AD%E7%9A%84else%E8%AF%AD%E5%8F%A5/"/>
     
@@ -149,9 +186,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="break和continue" scheme="https://blog.vseal.cn/tags/break%E5%92%8Ccontinue/"/>
     
@@ -176,9 +213,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="for循环语句" scheme="https://blog.vseal.cn/tags/for%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/"/>
     
@@ -215,9 +252,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="while循环" scheme="https://blog.vseal.cn/tags/while%E5%BE%AA%E7%8E%AF/"/>
     
@@ -242,9 +279,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
     
       <category term="switch语句的替换方案" scheme="https://blog.vseal.cn/tags/switch%E8%AF%AD%E5%8F%A5%E7%9A%84%E6%9B%BF%E6%8D%A2%E6%96%B9%E6%A1%88/"/>
     
@@ -272,9 +309,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
     
       <category term="if语句的嵌套" scheme="https://blog.vseal.cn/tags/if%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%B5%8C%E5%A5%97/"/>
     
@@ -305,9 +342,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
     
       <category term="if-elif-else" scheme="https://blog.vseal.cn/tags/if-elif-else/"/>
     
@@ -329,9 +366,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
     
       <category term="if-else" scheme="https://blog.vseal.cn/tags/if-else/"/>
     
@@ -650,82 +687,6 @@ print str.ljust(50);
       <category term="Python赋值运算符" scheme="https://blog.vseal.cn/tags/Python%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     
       <category term="赋值运算符" scheme="https://blog.vseal.cn/tags/%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python关系运算符和逻辑运算符</title>
-    <link href="https://blog.vseal.cn/posts/9696725b.html"/>
-    <id>https://blog.vseal.cn/posts/9696725b.html</id>
-    <published>2019-11-08T15:35:16.000Z</published>
-    <updated>2019-11-08T15:38:20.430Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;上节任务&quot;&gt;&lt;a href=&quot;#上节任务&quot; class=&quot;headerlink&quot; title=&quot;上节任务&quot;&gt;&lt;/a&gt;上节任务&lt;/h2&gt;&lt;h5 id=&quot;任务2-4-计算圆锥体的体积和表面积&quot;&gt;&lt;a href=&quot;#任务2-4-计算圆锥体的体积和表面积&quot; class=&quot;headerlink&quot; title=&quot;任务2-4 计算圆锥体的体积和表面积&quot;&gt;&lt;/a&gt;任务2-4 计算圆锥体的体积和表面积&lt;/h5&gt;&lt;p&gt;设计思路：从键盘接受2个数据，底面半径、高，存入变量，再根据公式计算求解。&lt;br&gt;任务示例源码：关注微信公众号“湖工大风沙渡”回复&lt;strong&gt;37py2-4&lt;/strong&gt;即可免费观看。&lt;/p&gt;&lt;hr&gt;&lt;h2 id=&quot;本篇正文&quot;&gt;&lt;a href=&quot;#本篇正文&quot; class=&quot;headerlink&quot; title=&quot;本篇正文&quot;&gt;&lt;/a&gt;本篇正文&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Python的关系运算符&lt;/li&gt;
-&lt;/ul&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&quot;text-align:left&quot;&gt;运算符&lt;/th&gt;
-&lt;th style=&quot;text-align:left&quot;&gt;操作&lt;/th&gt;
-&lt;th style=&quot;text-align:left&quot;&gt;实例说明&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;==&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;等于&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;2==2 True&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;!=&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;不等于&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;5!=2 True&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;&amp;lt;&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;小于&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;2&amp;lt;5 True&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;&amp;lt;=&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;小于或等于&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;2&amp;lt;=2 True&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;&amp;gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;大于&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;5&amp;gt;2 True&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;&amp;gt;=&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;大于或等于&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;2&amp;gt;=2 True&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;is&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;判断两个标识符是否&lt;strong&gt;引用&lt;/strong&gt;同一对象&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;引用同一对象 True&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;is not&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;判断两个标识符是否&lt;strong&gt;引用&lt;/strong&gt;不同对象&lt;/td&gt;
-&lt;td style=&quot;text-align:left&quot;&gt;引用不同对象 True&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python关系运算符" scheme="https://blog.vseal.cn/tags/Python%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-      <category term="Python逻辑运算符" scheme="https://blog.vseal.cn/tags/Python%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-      <category term="关系运算符和逻辑运算符" scheme="https://blog.vseal.cn/tags/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     
   </entry>
   

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[列表的创建]]></title>
+    <url>%2Fposts%2F47808459.html</url>
+    <content type="text"><![CDATA[列表的特点：通过一个变量存储多个数据值，且数据类型可以不同。另外，列表可以修改，如添加或删除列表的元素。 列表的创建 列表举例：[5,10,4,5,2] [‘Monday’,’Month’,’Year’] [2014,’年] 空列表:[] 遍历列表元素 使用in操作符遍历。 使用range()函数。 使用iter()函数，它是一个迭代器函数。 使用enumerate()函数遍历。该函数用于遍历序列中的元素及其下标。 【例4-1】 列表元素遍历示例。1234567891011121314151617print('第一种遍历方法，使用in操作符')mylist=['1001','Apple',4.5,'山东','2016-9',300]for item in mylist: print(item,end=' ')print()print('第二种遍历方法，使用range()或xrange()函数')listLen=len(mylist)for i in range(listLen): print(item,end=' ')print()print('第三种遍历方法，使用iter()函数')for item in iter(mylist): print(item,end=' ')print()print('第四种遍历方法，enumerate()函数')for item in enumerate(mylist): print(item,end=' ') 列表元素的访问与列表的切片切片与字符串使用类似。 切片语句 含义 list1[m:n] 得到一个索引从m开始到n-1为止的元素构成的子列表 list1[:] 克隆list1 list1[m:] 得到一个从索引m开始到列表末尾所有元素构成的子列表 list1[:n] 得到从开始到索引n结尾的子列表 [例4-2] 索引和切片应用的示例123456789101112131415# 分别输入年月日，组合后以对应的英文形式输出months=['January','February','March','April','May','June', 'July','August','September','October','November','December']# 定义1-31天的英文后缀endings=['st','nd','rd']+17*['th']\ +['st','nd','rd']+7*['th']\ +['st'] year=input('Year: ')month=int(input('Month(1-12): '))day=int(input('Day(1-31): '))month_name=months[month-1]ordinal=str(day)+endings[day-1]print(month_name+' '+ordinal+'.'+year)print('Spring is ',months[1:4])print('Autumn is ',months[-5:-2]) 更新列表 123list1 = [1,2,3,4,5,6,7]list1[2] = 10 #把列表的第三项由原来的3改为10list1.append(8) #在列表的尾部增加一个新元素8，列表变为[1,2,3,4,5,6,7,8] 删除列表 1234list1 = [1,2,3,4,5,6,7]del list1[2] #删除列表第3个元素，结果为[1,2,4,5,6,7]del list1[2:4] #删除列表索引从2到3的元素，结果为[1,2,5,6,7]del list1 #删除整个列表 pop()方法【更多方法查看后面的常用方法及示例】 1234t=['a','b','c','d']print(t.pop()) #不加索引号，输出弹出元素dprint(t) #输出['a','b','c']print(t.pop(2)) #输出弹出元素c 列表操作符示例 Python语句 结果 说明 len([1,2,3,4,5]) 5 列表的长度(元素个数) [1,2,3,4] + [5,6,7] [1,2,3,4,5,6,7] 合并两个列表为一个列表 [‘abc’] * 4 [‘abc’,’abc’,’abc’,’abc’] 列表重复4次 [3] in [1,2,3,4,5] True 检测元素是否在列表之中 [3] not in [1,2,3,4,5] False 检测元素是否不存在列表中 for x in [1,2,3]:print x 1 2 3 循环迭代 列表中的常用函数表中的list1 = [1,2,3,4,5]。 函数名 实例 结果 功能描述 len(list) print(len(list1)) 5 元素个数 max(list) print(max(list1)) 5 元素最大值 min(list) print(min(list1)) 1 元素最小值 sum(list) print(sum(list1)) 15 所有元素求和 list(seq) print(list(‘a’,’b’,’c’)) [‘a’,’b’,’c’] 将元组转为列表 列表中的常用方法及示例 函数名 实例 结果 功能描述 append(obj) t=[‘a’,’b’,’c’] t.append(‘d’) [‘a’,’b’,’c’,’d’] 列表末尾添加新的对象 count(obj) t=[‘a’,’b’,’c’] print(t.count(‘a’)) 1 统计某元素出现参数 extend(seq) t=[‘a’,’b’,’c’] t.extend([‘c’,’d’]) [‘a’,’b’,’c’,’c’,’d’] 在列表末尾一次性添加多个值 index(obj) t=[‘a’,’b’,’c’，’a’] t.index(‘a’) 0 从列表中找出与某个值第一个匹配的索引位置，找不到会报错 insert(index,obj) t=[‘a’,’b’,’c’,’d’] t.insert(2,’q’) [‘a’,’b’,’q’,’c’,’d’] 插入对象，原来索引位置及后面的元素后移 pop(index) t=[‘a’,’b’,’c’,’d’] print(t.pop(2)) c 删除索引位置的元素，并返回该值 remove(obj) t=[‘a’,’b’,’c’,’a’] t.remove(‘a’) [‘b’,’c’,’a’] 删除某个值第一个匹配对象 reverse() t=[‘a’,’b’,’c’,’d’] t.reverse() [‘d’,’c’,’b’,’a’] 反向列表元素 sort([func]) t=[‘g’,’b’,’a’,’k’,’m’] t.sort() [‘a’,’b’,’g’,’k’,’m’] 对原列表排序，有参数可选 注意： 执行del()或remove()方法之后，列表中被删除元素之后的其他元素会依次向前移动一个位置。 append()如果插入一个列表对象那么也会被当作一个元素看待如： 12t=['a','b','c','d']t.append(['e','f'])#运行结果：['a','b','c','d',['e','f']] 如果只是想合并两个列表，不想得到上述情况，那么使用extend()方法即可。 sort()和reverse()或使索引有变化。 嵌套列表嵌套列表的遍历需要使用多重循环结构。如果只是嵌套两层，可以使用两重循环结构来遍历；如果嵌套层次大于两重，建议使用递归函数来遍历。 两层嵌套列表遍历示例。1234567mylist=[['1001','Apple',4.5,'山东','2016-9',300], ['1002','Banana',2.5,'海南','2017-2',500], ['1001','Orange',3.3,'四川','2016-12',350]]for each in mylist: for item in each: print(item,end=' ') print() 任务4-1 学生成绩统计 任务描述：编写一个Python程序，实现学生成绩统计。要求输入n个学生的学号、姓名和语文、数学、英语、综合四门课程的成绩，生成每个学生的总成绩和平均成绩，统计并输出各科成绩的最高分、最低分以及各科的平均分和总平均分。 任务4-2 学生信息管理 任务描述：编写一个Python程序，实现对学生如下信息的管理：学号、姓名、性别、出生日期、电话、邮箱。要求提供菜单选择，实现学生信息的录入、查询、增加(插入)、修改、删除、排序等操作。]]></content>
+      <categories>
+        <category>Python基础教程</category>
+      </categories>
+      <tags>
+        <tag>列表</tag>
+        <tag>列表的创建</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[pass语句]]></title>
     <url>%2Fposts%2Fa36bb514.html</url>
     <content type="text"><![CDATA[上期回顾任务3-18 创建扑克牌 设计思路：根据题意，需要使用2个字符串列表来分别存放13张牌和4个花色。因为每个花色都要配13张牌，因此需要设计一个二重循环结构来完成。外层循环控制4个花色，遍历列表中的每一个花色，直到4个花色全部访问到。内层循环控制13张牌。在外层循环的每一次迭代中，内层循环都要执行一遍。在循环体中输出所有的牌面。任务3-19 字符串逆序输出 设计思路：需要使用循环结构来遍历每个字符。在遍历过程中，依次把每次遍历的字符插入结果字符串的前面，最后输出结果字符串。 本篇正文pass顾名思义：就是跳过，可以立即为占位语句，可能现在没想起写啥，但是以后可以不进去，做预留功能啥的。例如:1234if(条件语句): passif(条件语句1): pass]]></content>
@@ -8,8 +20,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python流程处理</tag>
         <tag>Python循环结构</tag>
+        <tag>Python流程处理</tag>
         <tag>pass语句</tag>
       </tags>
   </entry>
@@ -21,8 +33,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python流程处理</tag>
         <tag>Python循环结构</tag>
+        <tag>Python流程处理</tag>
         <tag>字符串的遍历循环</tag>
       </tags>
   </entry>
@@ -34,8 +46,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python流程处理</tag>
         <tag>Python循环结构</tag>
+        <tag>Python流程处理</tag>
         <tag>嵌套</tag>
       </tags>
   </entry>
@@ -47,8 +59,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python流程处理</tag>
         <tag>Python循环结构</tag>
+        <tag>Python流程处理</tag>
         <tag>循环中的else语句</tag>
       </tags>
   </entry>
@@ -60,8 +72,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python流程处理</tag>
         <tag>Python循环结构</tag>
+        <tag>Python流程处理</tag>
         <tag>break和continue</tag>
       </tags>
   </entry>
@@ -73,8 +85,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python流程处理</tag>
         <tag>Python循环结构</tag>
+        <tag>Python流程处理</tag>
         <tag>for循环语句</tag>
       </tags>
   </entry>
@@ -86,8 +98,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python流程处理</tag>
         <tag>Python循环结构</tag>
+        <tag>Python流程处理</tag>
         <tag>while循环</tag>
       </tags>
   </entry>
@@ -99,8 +111,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python选择结构</tag>
         <tag>Python流程处理</tag>
+        <tag>Python选择结构</tag>
         <tag>switch语句的替换方案</tag>
       </tags>
   </entry>
@@ -112,8 +124,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python选择结构</tag>
         <tag>Python流程处理</tag>
+        <tag>Python选择结构</tag>
         <tag>if语句的嵌套</tag>
       </tags>
   </entry>
@@ -125,8 +137,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python选择结构</tag>
         <tag>Python流程处理</tag>
+        <tag>Python选择结构</tag>
         <tag>if-elif-else</tag>
       </tags>
   </entry>
@@ -138,8 +150,8 @@
         <category>Python基础教程</category>
       </categories>
       <tags>
-        <tag>Python选择结构</tag>
         <tag>Python流程处理</tag>
+        <tag>Python选择结构</tag>
         <tag>if-else</tag>
       </tags>
   </entry>
