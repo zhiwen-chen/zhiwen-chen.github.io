@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2020-01-07T04:56:11.315Z</updated>
+  <updated>2020-01-08T04:53:03.184Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>列表解析</title>
+    <link href="https://blog.vseal.cn/posts/3975875.html"/>
+    <id>https://blog.vseal.cn/posts/3975875.html</id>
+    <published>2020-01-08T04:52:06.000Z</published>
+    <updated>2020-01-08T04:53:03.184Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务4-1-学生成绩统计&quot;&gt;&lt;a href=&quot;#任务4-1-学生成绩统计&quot; class=&quot;headerlink&quot; title=&quot;任务4-1 学生成绩统计&quot;&gt;&lt;/a&gt;任务4-1 学生成绩统计&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;根据题意，需要设计一个学生成绩列表。其中，列表的每一项表示一个学生的成绩信息；每个学生的成绩信息也是一个列表，由6项组成，分别是学号、姓名、语文成绩、数学成绩、英语成绩和综合成绩；还需要增加两项，分别是总成绩和平均成绩，通过计算获得。学生列表创建完成后，根据统计要求，分别创建各科成绩和平均成绩的列表，然后在这些新创建的列表中进行各项统计。&lt;/li&gt;
+&lt;li&gt;示例程序：&lt;br&gt;关注微信公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“，回复”37py4-1”即可获取。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="列表" scheme="https://blog.vseal.cn/tags/%E5%88%97%E8%A1%A8/"/>
+    
+      <category term="列表的解析" scheme="https://blog.vseal.cn/tags/%E5%88%97%E8%A1%A8%E7%9A%84%E8%A7%A3%E6%9E%90/"/>
+    
+      <category term="列表解析" scheme="https://blog.vseal.cn/tags/%E5%88%97%E8%A1%A8%E8%A7%A3%E6%9E%90/"/>
+    
+  </entry>
   
   <entry>
     <title>列表的创建</title>
@@ -72,9 +99,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     
       <category term="pass语句" scheme="https://blog.vseal.cn/tags/pass%E8%AF%AD%E5%8F%A5/"/>
     
@@ -101,9 +128,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     
       <category term="字符串的遍历循环" scheme="https://blog.vseal.cn/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E9%81%8D%E5%8E%86%E5%BE%AA%E7%8E%AF/"/>
     
@@ -128,9 +155,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     
       <category term="嵌套" scheme="https://blog.vseal.cn/tags/%E5%B5%8C%E5%A5%97/"/>
     
@@ -159,9 +186,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     
       <category term="循环中的else语句" scheme="https://blog.vseal.cn/tags/%E5%BE%AA%E7%8E%AF%E4%B8%AD%E7%9A%84else%E8%AF%AD%E5%8F%A5/"/>
     
@@ -186,9 +213,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     
       <category term="break和continue" scheme="https://blog.vseal.cn/tags/break%E5%92%8Ccontinue/"/>
     
@@ -213,9 +240,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     
       <category term="for循环语句" scheme="https://blog.vseal.cn/tags/for%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/"/>
     
@@ -252,9 +279,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    
       <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Python循环结构" scheme="https://blog.vseal.cn/tags/Python%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     
       <category term="while循环" scheme="https://blog.vseal.cn/tags/while%E5%BE%AA%E7%8E%AF/"/>
     
@@ -279,9 +306,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="switch语句的替换方案" scheme="https://blog.vseal.cn/tags/switch%E8%AF%AD%E5%8F%A5%E7%9A%84%E6%9B%BF%E6%8D%A2%E6%96%B9%E6%A1%88/"/>
     
@@ -309,9 +336,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="if语句的嵌套" scheme="https://blog.vseal.cn/tags/if%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%B5%8C%E5%A5%97/"/>
     
@@ -342,9 +369,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="if-elif-else" scheme="https://blog.vseal.cn/tags/if-elif-else/"/>
     
@@ -366,9 +393,9 @@
       <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
-    
       <category term="Python选择结构" scheme="https://blog.vseal.cn/tags/Python%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="Python流程处理" scheme="https://blog.vseal.cn/tags/Python%E6%B5%81%E7%A8%8B%E5%A4%84%E7%90%86/"/>
     
       <category term="if-else" scheme="https://blog.vseal.cn/tags/if-else/"/>
     
@@ -659,34 +686,6 @@ print str.ljust(50);
       <category term="Python位运算符" scheme="https://blog.vseal.cn/tags/Python%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     
       <category term="位运算符" scheme="https://blog.vseal.cn/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python赋值运算符</title>
-    <link href="https://blog.vseal.cn/posts/d136ea2c.html"/>
-    <id>https://blog.vseal.cn/posts/d136ea2c.html</id>
-    <published>2019-11-09T15:29:18.000Z</published>
-    <updated>2019-11-30T01:34:38.815Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;上节内容&quot;&gt;&lt;a href=&quot;#上节内容&quot; class=&quot;headerlink&quot; title=&quot;上节内容&quot;&gt;&lt;/a&gt;上节内容&lt;/h2&gt;&lt;h6 id=&quot;任务2-5-闰年判断&quot;&gt;&lt;a href=&quot;#任务2-5-闰年判断&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python赋值运算符" scheme="https://blog.vseal.cn/tags/Python%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-      <category term="赋值运算符" scheme="https://blog.vseal.cn/tags/%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     
   </entry>
   
