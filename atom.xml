@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2020-01-08T04:53:03.184Z</updated>
+  <updated>2020-01-10T12:02:27.158Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>列表实现队列</title>
+    <link href="https://blog.vseal.cn/posts/1b0b250e.html"/>
+    <id>https://blog.vseal.cn/posts/1b0b250e.html</id>
+    <published>2020-01-10T11:58:28.000Z</published>
+    <updated>2020-01-10T12:02:27.158Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务4-4-表达式括号匹配&quot;&gt;&lt;a href=&quot;#任务4-4-表达式括号匹配&quot; class=&quot;headerlink&quot; title=&quot;任务4-4 表达式括号匹配&quot;&gt;&lt;/a&gt;任务4-4 表达式括号匹配&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;字符串形式接收来自键盘接收一个带括号的任意表达式，通过堆栈来解决括号匹配问题。如果遇到左括号，则入栈；如果遇见右括号，则出栈；如果字符串遍历结束后，栈刚好为空，说明匹配成功；否者；则不匹配。&lt;/li&gt;
+&lt;li&gt;示例程序：&lt;br&gt;关注微信公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“，回复&lt;strong&gt;37py4-4&lt;/strong&gt;即可获取。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="列表" scheme="https://blog.vseal.cn/tags/%E5%88%97%E8%A1%A8/"/>
+    
+      <category term="队列" scheme="https://blog.vseal.cn/tags/%E9%98%9F%E5%88%97/"/>
+    
+      <category term="列表实现队列" scheme="https://blog.vseal.cn/tags/%E5%88%97%E8%A1%A8%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>列表实现堆栈</title>
+    <link href="https://blog.vseal.cn/posts/29a1321.html"/>
+    <id>https://blog.vseal.cn/posts/29a1321.html</id>
+    <published>2020-01-09T12:50:21.000Z</published>
+    <updated>2020-01-09T12:52:55.919Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务4-3-输出九九乘法表&quot;&gt;&lt;a href=&quot;#任务4-3-输出九九乘法表&quot; class=&quot;headerlink&quot; title=&quot;任务4-3 输出九九乘法表&quot;&gt;&lt;/a&gt;任务4-3 输出九九乘法表&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;根据要求，设计具有两个变量的列表解析语句。变量x用于控制乘号左边的数字，变量y用来控制乘号右边的数字。&lt;/li&gt;
+&lt;li&gt;示例源码：&lt;br&gt;关注微信公众号”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“，回复&lt;strong&gt;37py4-3&lt;/strong&gt; 即可获取~&lt;/li&gt;
+&lt;/ul&gt;&lt;hr&gt;&lt;h2 id=&quot;本篇正文&quot;&gt;&lt;a href=&quot;#本篇正文&quot; class=&quot;headerlink&quot; title=&quot;本篇正文&quot;&gt;&lt;/a&gt;本篇正文&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;两种办法模拟堆栈&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;用insert()和pop()方法模拟堆栈&lt;/p&gt;
+&lt;p&gt;特点：表头入栈和出栈&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;S=[]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;S.insert(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;#表头入栈(插入)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;S.insert(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;b&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;S.insert(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;c&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print(S) &lt;span class=&quot;comment&quot;&gt;#输出结果为：[&#39;c&#39;,&#39;b&#39;,&#39;a&#39;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print(S.pop(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;))&lt;span class=&quot;comment&quot;&gt;#表头出栈，输出c&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print(S.pop(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;))&lt;span class=&quot;comment&quot;&gt;#输出b&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;用append()和pop()模拟堆栈&lt;/p&gt;
+&lt;p&gt;特点：表尾入栈和出栈&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;S=[]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;S.append(&lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;#表尾添加一个a，入栈&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;S.append(&lt;span class=&quot;string&quot;&gt;&#39;b&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;S.append(&lt;span class=&quot;string&quot;&gt;&#39;c&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print(S)&lt;span class=&quot;comment&quot;&gt;#结果[&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print(S)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print(S.pop())&lt;span class=&quot;comment&quot;&gt;#最后一个位置出栈，输出c&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print(S.pop())&lt;span class=&quot;comment&quot;&gt;#输出b&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="列表" scheme="https://blog.vseal.cn/tags/%E5%88%97%E8%A1%A8/"/>
+    
+      <category term="堆栈" scheme="https://blog.vseal.cn/tags/%E5%A0%86%E6%A0%88/"/>
+    
+      <category term="列表实现堆栈" scheme="https://blog.vseal.cn/tags/%E5%88%97%E8%A1%A8%E5%AE%9E%E7%8E%B0%E5%A0%86%E6%A0%88/"/>
+    
+  </entry>
   
   <entry>
     <title>列表解析</title>
@@ -625,67 +692,6 @@ print str.ljust(50);
       <category term="Python输入" scheme="https://blog.vseal.cn/tags/Python%E8%BE%93%E5%85%A5/"/>
     
       <category term="输入" scheme="https://blog.vseal.cn/tags/%E8%BE%93%E5%85%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python成员运算符</title>
-    <link href="https://blog.vseal.cn/posts/80ab09ee.html"/>
-    <id>https://blog.vseal.cn/posts/80ab09ee.html</id>
-    <published>2019-11-11T14:24:48.000Z</published>
-    <updated>2019-11-11T14:32:46.112Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h5 id=&quot;in-和-not-in&quot;&gt;&lt;a href=&quot;#in-和-not-in&quot; class=&quot;headerlink&quot; title=&quot;in 和 not in&quot;&gt;&lt;/a&gt;in 和 not in&lt;/h5&gt;&lt;p&gt;in：在序列里面返回True，否者为False&lt;br&gt;not in
-        
-      
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python成员运算符" scheme="https://blog.vseal.cn/tags/Python%E6%88%90%E5%91%98%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-      <category term="成员运算符" scheme="https://blog.vseal.cn/tags/%E6%88%90%E5%91%98%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python位运算符</title>
-    <link href="https://blog.vseal.cn/posts/8667cafb.html"/>
-    <id>https://blog.vseal.cn/posts/8667cafb.html</id>
-    <published>2019-11-10T13:07:49.000Z</published>
-    <updated>2019-11-10T13:09:22.370Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;位运算的规则：&lt;strong&gt;把数字转为二进制后进行运算，运算结果转为原数字类型&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
-&lt;li&gt;Python的位运算符&lt;/li&gt;
-&lt;/ul&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th
-        
-      
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python位运算符" scheme="https://blog.vseal.cn/tags/Python%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-      <category term="位运算符" scheme="https://blog.vseal.cn/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     
   </entry>
   
