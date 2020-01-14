@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2020-01-10T12:02:27.158Z</updated>
+  <updated>2020-01-14T10:34:20.973Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>元组</title>
+    <link href="https://blog.vseal.cn/posts/30e8fbca.html"/>
+    <id>https://blog.vseal.cn/posts/30e8fbca.html</id>
+    <published>2020-01-14T10:33:30.000Z</published>
+    <updated>2020-01-14T10:34:20.973Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上篇回顾&quot;&gt;&lt;a href=&quot;#上篇回顾&quot; class=&quot;headerlink&quot; title=&quot;上篇回顾&quot;&gt;&lt;/a&gt;上篇回顾&lt;/h2&gt;&lt;h5 id=&quot;任务4-5-约塞夫环问题&quot;&gt;&lt;a href=&quot;#任务4-5-约塞夫环问题&quot; class=&quot;headerlink&quot; title=&quot;任务4-5 约塞夫环问题&quot;&gt;&lt;/a&gt;任务4-5 约塞夫环问题&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;用队列实现，就是将n个人构成一个队列，从队头开始报数。队头的人若报m，则移除队列；不是，则出队再入队（模拟圆环），等待下次到达队头位置。&lt;/li&gt;
+&lt;li&gt;演示源码:&lt;br&gt;关注博客”&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;“，回复&lt;strong&gt;37py4-5&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;&lt;hr&gt;&lt;h2 id=&quot;本篇正文&quot;&gt;&lt;a href=&quot;#本篇正文&quot; class=&quot;headerlink&quot; title=&quot;本篇正文&quot;&gt;&lt;/a&gt;本篇正文&lt;/h2&gt;&lt;p&gt;元组与列表类似，都是&lt;strong&gt;有序序列&lt;/strong&gt;，但是&lt;strong&gt;元组只读不写&lt;/strong&gt;。没有append()、extend()和insert()方法。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="列表" scheme="https://blog.vseal.cn/tags/%E5%88%97%E8%A1%A8/"/>
+    
+      <category term="元组" scheme="https://blog.vseal.cn/tags/%E5%85%83%E7%BB%84/"/>
+    
+  </entry>
   
   <entry>
     <title>列表实现队列</title>
@@ -663,35 +688,6 @@ print str.ljust(50);
       <category term="Python输出" scheme="https://blog.vseal.cn/tags/Python%E8%BE%93%E5%87%BA/"/>
     
       <category term="输出" scheme="https://blog.vseal.cn/tags/%E8%BE%93%E5%87%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python输入</title>
-    <link href="https://blog.vseal.cn/posts/bdee3b16.html"/>
-    <id>https://blog.vseal.cn/posts/bdee3b16.html</id>
-    <published>2019-11-13T15:38:33.000Z</published>
-    <updated>2019-11-14T13:37:46.026Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;函数input()&lt;br&gt;  语法格式：变量名 = input(“输入提示信息”)&lt;br&gt; 
-        
-      
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python输入" scheme="https://blog.vseal.cn/tags/Python%E8%BE%93%E5%85%A5/"/>
-    
-      <category term="输入" scheme="https://blog.vseal.cn/tags/%E8%BE%93%E5%85%A5/"/>
     
   </entry>
   

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[元组]]></title>
+    <url>%2Fposts%2F30e8fbca.html</url>
+    <content type="text"><![CDATA[上篇回顾任务4-5 约塞夫环问题 设计思路：用队列实现，就是将n个人构成一个队列，从队头开始报数。队头的人若报m，则移除队列；不是，则出队再入队（模拟圆环），等待下次到达队头位置。 演示源码:关注博客”blog_vseal_cn“，回复37py4-5。 本篇正文元组与列表类似，都是有序序列，但是元组只读不写。没有append()、extend()和insert()方法。 元组的创建 123t1 = ('month','day',4'5'7)#用圆括号包围，推荐使用t2 = (1,2,3,4,5)t3 = 'a','b','c','d'#输出时会自动加上圆括号 注意： 元组内元素可以是不同类型 t=()表示创建一个空元组 创建只有一个元素的元组时，末尾要加上逗号，如t=&#39;a&#39;,或t=(&#39;a&#39;,) 使用tuple()函数，可以把列表变成元组tuple(list1) 元组的访问和切片使用和列表一样，只是访问时不能被赋值，只能读取，否者会报错。 元组操作符+合并元组，*重复元组，使用in或not in查看元素是否在元组中 删除整个元组 del(yourTuple)使用del关键字删除 可使用的函数与方法 没有append()、extend()和insert()方法。其他和列表一样。]]></content>
+      <categories>
+        <category>Python基础教程</category>
+      </categories>
+      <tags>
+        <tag>列表</tag>
+        <tag>元组</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[列表实现队列]]></title>
     <url>%2Fposts%2F1b0b250e.html</url>
     <content type="text"><![CDATA[上期回顾任务4-4 表达式括号匹配 设计思路：字符串形式接收来自键盘接收一个带括号的任意表达式，通过堆栈来解决括号匹配问题。如果遇到左括号，则入栈；如果遇见右括号，则出栈；如果字符串遍历结束后，栈刚好为空，说明匹配成功；否者；则不匹配。 示例程序：关注微信公众号”blog_vseal_cn“，回复37py4-4即可获取。 本篇正文队列简单来说就是一头进一头出，先进先出。 两种方法模拟队列 用insert()和pop() 1234567S=[]S.insert(0,'a') #表头入队(插入)S.insert(0,'b')S.insert(0,'c')print(S) #输出结果为：['c','b','a']print(S.pop())#表尾出队，输出aprint(S.pop())#输出b append()和pop() 12345678S=[]S.append('a') #表尾添加一个a，入队S.append('b')S.append('c')print(S)#结果['a','b','c']print(S)print(S.pop(0))#表头出队，输出aprint(S.pop(0))#输出b 任务4-5 约塞夫环问题 任务描述：解决约塞夫环的问题；已知n个人（以编号1，2，3…，n分别表示）围坐在一张圆桌周围。从编号为k的人开始报数，数到k的那个人退出；他的下一个人又从1开始报数，数到k的那个人又退出；以此规律重复下去，直到圆桌周围的人只剩最后一个。]]></content>
