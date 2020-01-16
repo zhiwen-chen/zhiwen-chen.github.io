@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2020-01-14T10:34:20.973Z</updated>
+  <updated>2020-01-16T14:41:09.925Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>字典</title>
+    <link href="https://blog.vseal.cn/posts/730cec53.html"/>
+    <id>https://blog.vseal.cn/posts/730cec53.html</id>
+    <published>2020-01-16T14:39:52.000Z</published>
+    <updated>2020-01-16T14:41:09.925Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务4-6-扑克游戏发牌模拟&quot;&gt;&lt;a href=&quot;#任务4-6-扑克游戏发牌模拟&quot; class=&quot;headerlink&quot; title=&quot;任务4-6 扑克游戏发牌模拟&quot;&gt;&lt;/a&gt;任务4-6 扑克游戏发牌模拟&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;由于扑克牌的牌面是固定的，由13个数字和4种花色组成，因此可以使用元组来完成任务。首先定义2个元组分别存放13个数字和4种花色，然后组合成具有52张牌的元组；接着，采用随机数把牌打乱，分给4个人；最后，输出结果&lt;/li&gt;
+&lt;li&gt;示例源码：&lt;br&gt;关注微信公众号“&lt;strong&gt;blog_vseal_cn&lt;/strong&gt;”，回复&lt;strong&gt;37py4-6&lt;/strong&gt;即可获取。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="字典" scheme="https://blog.vseal.cn/tags/%E5%AD%97%E5%85%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>元组</title>
@@ -641,53 +664,6 @@
       <category term="复数" scheme="https://blog.vseal.cn/tags/%E5%A4%8D%E6%95%B0/"/>
     
       <category term="Python数学运算符" scheme="https://blog.vseal.cn/tags/Python%E6%95%B0%E5%AD%A6%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python输出</title>
-    <link href="https://blog.vseal.cn/posts/2d05461.html"/>
-    <id>https://blog.vseal.cn/posts/2d05461.html</id>
-    <published>2019-11-14T13:33:47.000Z</published>
-    <updated>2019-11-15T15:38:41.742Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;本节内容：print()函数&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;简单玩法：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;print(var1,var2)#直接输出变量&lt;/li&gt;
-&lt;li&gt;print(“str”,var)#字符串后加变量&lt;/li&gt;
-&lt;li&gt;print(“words %d %s “ %(num,str))#传说中的占位符&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;普通玩法：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;语法格式：print(*objects,sep=’’,end=’\n’[,file=sys.stdout,flush=False])#括号[]内的参数很少使用&lt;/li&gt;
-&lt;li&gt;参数说明：objects转为字符串的对象，然后写入file参数指定的文件，sys.stdout为标准输出;sep每个对象间分隔的参数，默认是空格；end为结尾参数，默认为换行。&lt;br&gt;1.有趣的示例：&lt;ol&gt;
-&lt;li&gt;print(‘Hello’,’world!’,sep=’**‘) 输出 Hello**world&lt;/li&gt;
-&lt;li&gt;print()默认输出后换行，不想换行可以print(end=’’)修改结尾参数&lt;/li&gt;
-&lt;li&gt;使用转义字符控制输出格式如\t(8个空格的制表符) \n&lt;/li&gt;
-&lt;li&gt;使用转义字符输出特殊字符，\，\’，\”等&lt;/li&gt;
-&lt;li&gt;字符对齐：左对齐ljust(n)、右对齐rjust(n)和居中center(n),n为最大显示字符个数；如&lt;pre&gt;&lt;code&gt;str = &amp;quot;this is string example....wow!!!&amp;quot;;
-print str.ljust(50);
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;zifill()函数0左填充&lt;pre&gt;&lt;code&gt;print str.zifill();
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python输出" scheme="https://blog.vseal.cn/tags/Python%E8%BE%93%E5%87%BA/"/>
-    
-      <category term="输出" scheme="https://blog.vseal.cn/tags/%E8%BE%93%E5%87%BA/"/>
     
   </entry>
   
