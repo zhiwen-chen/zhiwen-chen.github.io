@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.vseal.cn/"/>
-  <updated>2020-01-16T14:41:09.925Z</updated>
+  <updated>2020-02-14T13:44:21.503Z</updated>
   <id>https://blog.vseal.cn/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>管理字典</title>
+    <link href="https://blog.vseal.cn/posts/fa961642.html"/>
+    <id>https://blog.vseal.cn/posts/fa961642.html</id>
+    <published>2020-02-14T13:43:36.000Z</published>
+    <updated>2020-02-14T13:44:21.503Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;上期回顾&quot;&gt;&lt;a href=&quot;#上期回顾&quot; class=&quot;headerlink&quot; title=&quot;上期回顾&quot;&gt;&lt;/a&gt;上期回顾&lt;/h2&gt;&lt;h5 id=&quot;任务4-7-字符个数统计&quot;&gt;&lt;a href=&quot;#任务4-7-字符个数统计&quot; class=&quot;headerlink&quot; title=&quot;任务4-7 字符个数统计&quot;&gt;&lt;/a&gt;任务4-7 字符个数统计&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;设计思路：&lt;br&gt;新建一个字典对象，存放字符和出现次数键值对。遍历字符串中的每一个字符，如果第一次出现，则添加进字典，出现次数置为1；否者该字符的出现次数加1.最后输出结果。&lt;/li&gt;
+&lt;/ul&gt;&lt;hr&gt;&lt;h2 id=&quot;本篇正文&quot;&gt;&lt;a href=&quot;#本篇正文&quot; class=&quot;headerlink&quot; title=&quot;本篇正文&quot;&gt;&lt;/a&gt;本篇正文&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;cmp(dict1, dict2)&lt;br&gt;比较两个字典元素。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;len(dict)&lt;br&gt;计算字典元素个数，即键的总数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;str(dict)&lt;br&gt;输出字典可打印的字符串表示。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;type(variable)&lt;br&gt;返回输入的变量类型，如果变量是字典就返回字典类型。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dict.clear()&lt;br&gt;删除字典内所有元素&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dict.copy()&lt;br&gt;返回一个字典的浅复制&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dict.fromkeys(seq[, val])&lt;br&gt;创建一个新字典，以序列 seq 中元素做字典的键，val 为字典所有键对应的初始值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dict.get(key, default=None)&lt;br&gt;返回指定键的值，如果值不在字典中返回default值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dict.has_key(key)&lt;br&gt;如果键在字典dict里返回true，否则返回false&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dict.items()&lt;br&gt;以列表返回可遍历的(键, 值) 元组数组&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dict.keys()&lt;br&gt;以列表返回一个字典所有的键&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dict.values()&lt;br&gt;以列表返回字典中的所有值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dict.setdefault(key, default=None)&lt;br&gt;和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dict.update(dict2)&lt;br&gt;把字典dict2的键/值对更新到dict里&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;pop(key[,default])&lt;br&gt;删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;popitem()&lt;br&gt;随机返回并删除字典中的一对键和值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="字典" scheme="https://blog.vseal.cn/tags/%E5%AD%97%E5%85%B8/"/>
+    
+      <category term="管理字典" scheme="https://blog.vseal.cn/tags/%E7%AE%A1%E7%90%86%E5%AD%97%E5%85%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>字典</title>
@@ -628,42 +685,6 @@
       <category term="Python数学模块" scheme="https://blog.vseal.cn/tags/Python%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9D%97/"/>
     
       <category term="math模块" scheme="https://blog.vseal.cn/tags/math%E6%A8%A1%E5%9D%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python复数</title>
-    <link href="https://blog.vseal.cn/posts/bebfcfa4.html"/>
-    <id>https://blog.vseal.cn/posts/bebfcfa4.html</id>
-    <published>2019-11-16T14:53:27.000Z</published>
-    <updated>2019-11-16T14:54:27.203Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;内建函数库的complex()&lt;ol&gt;
-&lt;li&gt;普通构造：&lt;code&gt;complex(2,3)&lt;/code&gt;；代表2+3j&lt;/li&gt;
-&lt;li&gt;字符串构建：&lt;code&gt;complex(&amp;#39;2+3j&amp;#39;)&lt;/code&gt;；代表2+3j&lt;/li&gt;
-&lt;li&gt;获
-        
-      
-    
-    </summary>
-    
-      <category term="Python基础教程" scheme="https://blog.vseal.cn/categories/Python%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Python数学运算符之复数" scheme="https://blog.vseal.cn/tags/Python%E6%95%B0%E5%AD%A6%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B9%8B%E5%A4%8D%E6%95%B0/"/>
-    
-      <category term="Python复数" scheme="https://blog.vseal.cn/tags/Python%E5%A4%8D%E6%95%B0/"/>
-    
-      <category term="复数" scheme="https://blog.vseal.cn/tags/%E5%A4%8D%E6%95%B0/"/>
-    
-      <category term="Python数学运算符" scheme="https://blog.vseal.cn/tags/Python%E6%95%B0%E5%AD%A6%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     
   </entry>
   
