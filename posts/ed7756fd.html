@@ -66,20 +66,20 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
   };
 </script>
 
-  <meta name="description" content="in 和 not inin：在序列里面返回True，否者为Falsenot in ：与上面刚好相反">
-<meta name="keywords" content="Python成员运算符,成员运算符">
+  <meta name="description" content="上期回顾任务4-8 用户注册与登录模拟 设计思路：用字典预先存放一些用户的用户名和密码。用菜单形式提供登录和注册操作。如果是登录，用户输入用户名和密码后，在字典中查找，并比较是否正确。如果正确，允许登录；否则，给出错误信息；连续错误三次，退出程序。如果是注册，用户输入注册所需信息，并检测用户名是否存在。如果存在，要求用户修改，直到没有重名。最后，把新用户的用户名和密码添加到字典中。">
+<meta name="keywords" content="集合的创建与使用,集合">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python成员运算符">
-<meta property="og:url" content="https://blog.vseal.cn/posts/80ab09ee.html">
+<meta property="og:title" content="集合的创建与使用">
+<meta property="og:url" content="https://blog.vseal.cn/posts/ed7756fd.html">
 <meta property="og:site_name" content="紫印罗兰的博客">
-<meta property="og:description" content="in 和 not inin：在序列里面返回True，否者为Falsenot in ：与上面刚好相反">
+<meta property="og:description" content="上期回顾任务4-8 用户注册与登录模拟 设计思路：用字典预先存放一些用户的用户名和密码。用菜单形式提供登录和注册操作。如果是登录，用户输入用户名和密码后，在字典中查找，并比较是否正确。如果正确，允许登录；否则，给出错误信息；连续错误三次，退出程序。如果是注册，用户输入注册所需信息，并检测用户名是否存在。如果存在，要求用户修改，直到没有重名。最后，把新用户的用户名和密码添加到字典中。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-11T14:32:46.112Z">
+<meta property="og:updated_time" content="2020-02-16T05:51:48.523Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python成员运算符">
-<meta name="twitter:description" content="in 和 not inin：在序列里面返回True，否者为Falsenot in ：与上面刚好相反">
+<meta name="twitter:title" content="集合的创建与使用">
+<meta name="twitter:description" content="上期回顾任务4-8 用户注册与登录模拟 设计思路：用字典预先存放一些用户的用户名和密码。用菜单形式提供登录和注册操作。如果是登录，用户输入用户名和密码后，在字典中查找，并比较是否正确。如果正确，允许登录；否则，给出错误信息；连续错误三次，退出程序。如果是注册，用户输入注册所需信息，并检测用户名是否存在。如果存在，要求用户修改，直到没有重名。最后，把新用户的用户名和密码添加到字典中。">
 
-<link rel="canonical" href="https://blog.vseal.cn/posts/80ab09ee.html">
+<link rel="canonical" href="https://blog.vseal.cn/posts/ed7756fd.html">
 
 
 <script id="page-configurations">
@@ -93,7 +93,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
   };
 </script>
 
-  <title>Python成员运算符 | 紫印罗兰的博客</title>
+  <title>集合的创建与使用 | 紫印罗兰的博客</title>
   
 
 
@@ -238,7 +238,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/80ab09ee.html">
+    <link itemprop="mainEntityOfPage" href="https://blog.vseal.cn/posts/ed7756fd.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -251,7 +251,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Python成员运算符
+          集合的创建与使用
         </h1>
 
         <div class="post-meta">
@@ -262,7 +262,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-11-11 22:24:48 / 修改时间：22:32:46" itemprop="dateCreated datePublished" datetime="2019-11-11T22:24:48+08:00">2019-11-11</time>
+              <time title="创建时间：2020-02-16 13:50:23 / 修改时间：13:51:48" itemprop="dateCreated datePublished" datetime="2020-02-16T13:50:23+08:00">2020-02-16</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -287,7 +287,34 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
     <div class="post-body" itemprop="articleBody">
 
       
-        <h5 id="in-和-not-in"><a href="#in-和-not-in" class="headerlink" title="in 和 not in"></a>in 和 not in</h5><p>in：在序列里面返回True，否者为False<br>not in ：与上面刚好相反</p>
+        <h2 id="上期回顾"><a href="#上期回顾" class="headerlink" title="上期回顾"></a>上期回顾</h2><h5 id="任务4-8-用户注册与登录模拟"><a href="#任务4-8-用户注册与登录模拟" class="headerlink" title="任务4-8 用户注册与登录模拟"></a>任务4-8 用户注册与登录模拟</h5><ul>
+<li>设计思路：<br>用字典预先存放一些用户的用户名和密码。用菜单形式提供登录和注册操作。如果是登录，用户输入用户名和密码后，在字典中查找，并比较是否正确。如果正确，允许登录；否则，给出错误信息；连续错误三次，退出程序。如果是注册，用户输入注册所需信息，并检测用户名是否存在。如果存在，要求用户修改，直到没有重名。最后，把新用户的用户名和密码添加到字典中。</li>
+</ul><a id="more"></a>
+<hr>
+<h2 id="本篇正文"><a href="#本篇正文" class="headerlink" title="本篇正文"></a>本篇正文</h2><p>Python中的集合是一种数据类型，元素具有唯一性；集合又分为可变集合和不可变集合。对于可变集合(set)，可以添加和删除元素；对于不可变集合(frozenset)，不允许这样做。</p>
+<p>集合是一个<strong>无序不重复</strong>元素集，其基本功能包括<strong>关系测试</strong>和<strong>消除重复元素</strong>。集合对象还支持并、交、差、对称差等操作。</p>
+<ul>
+<li>创建集合<br>集合只能由工厂方法set()和frozenset()创建。如果不提供参数，默认为空集合；如果提供一个参数，则该参数必须是可迭代的，即一个序列，或迭代器，或支持迭代器的一个对象，例如一个列表或一个字典或字符串。</li>
+</ul>
+<h5 id="【例4-5】-集合使用示例"><a href="#【例4-5】-集合使用示例" class="headerlink" title="【例4-5】 集合使用示例"></a>【例4-5】 集合使用示例</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">s1=set(<span class="string">'chocolate'</span>)   <span class="comment"># 利用字符串创建一个集合，集合的元素是互不相同的单个字符</span></span><br><span class="line">print(s1)</span><br><span class="line">print(type(s1))</span><br><span class="line">s2=&#123;<span class="string">'chess'</span>,<span class="string">'book'</span>&#125;  <span class="comment">#用列表创建一个集合，集合的元素就是列表中互不相同的元素 </span></span><br><span class="line">print(s2)</span><br><span class="line">print(type(s2))</span><br><span class="line">t=frozenset(<span class="string">'salesman'</span>)  <span class="comment">#创建一个可变集合 </span></span><br><span class="line">print(t)</span><br><span class="line">print(type(t))</span><br><span class="line">dt=&#123;<span class="string">'1'</span>:<span class="string">'one'</span>,<span class="string">'2'</span>:<span class="string">'two'</span>,<span class="string">'3'</span>:<span class="string">'three'</span>&#125; <span class="comment">#用字典创建一个集合，集合的元素是字典的键</span></span><br><span class="line">s3=set(dt)</span><br><span class="line">print(s3)</span><br><span class="line">list1=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>] </span><br><span class="line">s4=set(list1)  <span class="comment"># 用列表创建一个集合，集合的元素是列表中不重复的元素</span></span><br><span class="line">print(s4)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>访问集合<br>只能循环遍历，或使用in 和 not in。</p>
+</li>
+<li><p>添加元素【仅可变集合】</p>
+<ol>
+<li>集合对象名.add(元素)#任何类型</li>
+<li>集合对象名.update(元素)#元素可为多个，不能添加int类型,int不可迭代</li>
+</ol>
+</li>
+<li><p>删除集合元素【仅可变集合】</p>
+<ol>
+<li>集合对象名.remove(元素)#元素不存在<strong>会报错</strong></li>
+<li>集合对象名.discard(元素)#元素不存在<strong>不会报错</strong></li>
+<li>集合对象名.pop()#没有参数，<strong>随机删除</strong>集合中的一个元素，并返回该元素。</li>
+</ol>
+</li>
+</ul>
+
     </div>
 
     
@@ -316,25 +343,22 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Python成员运算符/" rel="tag"># Python成员运算符</a>
-              <a href="/tags/成员运算符/" rel="tag"># 成员运算符</a>
+              <a href="/tags/集合的创建与使用/" rel="tag"># 集合的创建与使用</a>
+              <a href="/tags/集合/" rel="tag"># 集合</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/posts/8667cafb.html" rel="next" title="Python位运算符">
-                  <i class="fa fa-chevron-left"></i> Python位运算符
+                <a href="/posts/fa961642.html" rel="next" title="管理字典">
+                  <i class="fa fa-chevron-left"></i> 管理字典
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/posts/bdee3b16.html" rel="prev" title="Python输入">
-                  Python输入 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
       </footer>
@@ -378,7 +402,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#in-和-not-in"><span class="nav-number">1.</span> <span class="nav-text">in 和 not in</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#上期回顾"><span class="nav-number">1.</span> <span class="nav-text">上期回顾</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#任务4-8-用户注册与登录模拟"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">任务4-8 用户注册与登录模拟</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本篇正文"><span class="nav-number">2.</span> <span class="nav-text">本篇正文</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#【例4-5】-集合使用示例"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">【例4-5】 集合使用示例</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

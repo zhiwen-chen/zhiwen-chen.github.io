@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[集合的创建与使用]]></title>
+    <url>%2Fposts%2Fed7756fd.html</url>
+    <content type="text"><![CDATA[上期回顾任务4-8 用户注册与登录模拟 设计思路：用字典预先存放一些用户的用户名和密码。用菜单形式提供登录和注册操作。如果是登录，用户输入用户名和密码后，在字典中查找，并比较是否正确。如果正确，允许登录；否则，给出错误信息；连续错误三次，退出程序。如果是注册，用户输入注册所需信息，并检测用户名是否存在。如果存在，要求用户修改，直到没有重名。最后，把新用户的用户名和密码添加到字典中。 本篇正文Python中的集合是一种数据类型，元素具有唯一性；集合又分为可变集合和不可变集合。对于可变集合(set)，可以添加和删除元素；对于不可变集合(frozenset)，不允许这样做。 集合是一个无序不重复元素集，其基本功能包括关系测试和消除重复元素。集合对象还支持并、交、差、对称差等操作。 创建集合集合只能由工厂方法set()和frozenset()创建。如果不提供参数，默认为空集合；如果提供一个参数，则该参数必须是可迭代的，即一个序列，或迭代器，或支持迭代器的一个对象，例如一个列表或一个字典或字符串。 【例4-5】 集合使用示例123456789101112131415s1=set('chocolate') # 利用字符串创建一个集合，集合的元素是互不相同的单个字符print(s1)print(type(s1))s2=&#123;'chess','book'&#125; #用列表创建一个集合，集合的元素就是列表中互不相同的元素 print(s2)print(type(s2))t=frozenset('salesman') #创建一个可变集合 print(t)print(type(t))dt=&#123;'1':'one','2':'two','3':'three'&#125; #用字典创建一个集合，集合的元素是字典的键s3=set(dt)print(s3)list1=[1,2,3,4,5,1,2,3,4,5] s4=set(list1) # 用列表创建一个集合，集合的元素是列表中不重复的元素print(s4) 访问集合只能循环遍历，或使用in 和 not in。 添加元素【仅可变集合】 集合对象名.add(元素)#任何类型 集合对象名.update(元素)#元素可为多个，不能添加int类型,int不可迭代 删除集合元素【仅可变集合】 集合对象名.remove(元素)#元素不存在会报错 集合对象名.discard(元素)#元素不存在不会报错 集合对象名.pop()#没有参数，随机删除集合中的一个元素，并返回该元素。]]></content>
+      <categories>
+        <category>Python基础教程</category>
+      </categories>
+      <tags>
+        <tag>集合的创建与使用</tag>
+        <tag>集合</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[管理字典]]></title>
     <url>%2Fposts%2Ffa961642.html</url>
     <content type="text"><![CDATA[上期回顾任务4-7 字符个数统计 设计思路：新建一个字典对象，存放字符和出现次数键值对。遍历字符串中的每一个字符，如果第一次出现，则添加进字典，出现次数置为1；否者该字符的出现次数加1.最后输出结果。 本篇正文 cmp(dict1, dict2)比较两个字典元素。 len(dict)计算字典元素个数，即键的总数。 str(dict)输出字典可打印的字符串表示。 type(variable)返回输入的变量类型，如果变量是字典就返回字典类型。 dict.clear()删除字典内所有元素 dict.copy()返回一个字典的浅复制 dict.fromkeys(seq[, val])创建一个新字典，以序列 seq 中元素做字典的键，val 为字典所有键对应的初始值 dict.get(key, default=None)返回指定键的值，如果值不在字典中返回default值 dict.has_key(key)如果键在字典dict里返回true，否则返回false dict.items()以列表返回可遍历的(键, 值) 元组数组 dict.keys()以列表返回一个字典所有的键 dict.values()以列表返回字典中的所有值 dict.setdefault(key, default=None)和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default dict.update(dict2)把字典dict2的键/值对更新到dict里 pop(key[,default])删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。 popitem()随机返回并删除字典中的一对键和值。 任务4-8 用户注册与登录模拟 任务描述：如题。]]></content>
